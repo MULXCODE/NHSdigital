@@ -1,0 +1,13 @@
+# baseURI: file:///nhsdigital.tobraid.solutions/demo/input/March2020_NHSDD.xml.sxml
+# imports: http://topbraid.org/sxml
+
+@base          <file:///nhsdigital.tobraid.solutions/demo/input/March2020_NHSDD.xml.sxml> .
+@prefix sxml:  <http://topbraid.org/sxml#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<>      a             owl:Ontology ;
+        sxml:imports  <http://hl7.org/fhir> ;
+        owl:imports   <http://topbraid.org/sxml> .

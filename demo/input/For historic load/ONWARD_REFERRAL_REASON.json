@@ -1,0 +1,308 @@
+{
+  "resourceType": "CodeSystem",
+  "language": "en-GB",
+  "url": "https://www.datadictionary.nhs.uk/code_system/union/onward_referral_reason",
+  "identifier": {
+    "system": "http://www.datadictionary.nhs.uk/V3",
+    "value": "http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/onward_referral_reason_de.asp"
+  },
+  "version": "1.0.2",
+  "name": "ONWARD_REFERRAL_REASON",
+  "title": "Onward Referral Reason",
+  "status": "active",
+  "experimental": false,
+  "date": "2017-09-26T15:35:02+01:00",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital Data Model and Dictionary Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "information.standards@nhs.net"
+        },
+        {
+          "system": "url",
+          "value": "http://www.datadictionary.nhs.uk/"
+        }
+      ]
+    }
+  ],
+  "description": "This code system represents a union of any National, Permitted and Default Codes from the NHS Data Dictionary attribute ONWARD_REFERRAL_REASON, http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/onward_referral_reason_de.asp and its linked data elements as of 26th of September 2017. Note that this code system may contain active and retired concepts.",
+  "copyright": "Copyright © NHS Digital",
+  "caseSensitive": false,
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "versionNeeded": false,
+  "content": "complete",
+  "count": 7,
+  "filter": [
+    {
+      "code": "Data Element",
+      "description": "Filter to identify which Data Elements a concept relates to",
+      "operator": [
+        "in",
+        "=",
+        "exists",
+        "not-in"
+      ],
+      "value": "Data Element"
+    },
+    {
+      "code": "Data Attribute",
+      "description": "Filter to identify which Data Attribute a concept relates to",
+      "operator": [
+        "in",
+        "=",
+        "exists",
+        "not-in"
+      ],
+      "value": "Data Attribute"
+    },
+    {
+      "code": "Publish Date",
+      "description": "Filter to enable filtering by Publish date/s",
+      "operator": [
+        "in",
+        "=",
+        "exists",
+        "not-in"
+      ],
+      "value": "Publish Date"
+    },
+    {
+      "code": "Retired Date",
+      "description": "Filter to enable filtering by date of retirement",
+      "operator": [
+        "in",
+        "=",
+        "exists",
+        "not-in"
+      ],
+      "value": "Retired Date"
+    },
+    {
+      "code": "Status",
+      "description": "Filter to identify status of a concept",
+      "operator": [
+        "="
+      ],
+      "value": "Status"
+    }
+  ],
+  "property": [
+    {
+      "code": "Data Element",
+      "description": "The Data Element that the concept relates to",
+      "type": "string"
+    },
+    {
+      "code": "Data Attribute",
+      "description": "The Data Attribute that the concept relates to",
+      "type": "string"
+    },
+    {
+      "code": "Publish Date",
+      "description": "The date on which the concept was first published and/or updated",
+      "type": "dateTime"
+    },
+    {
+      "code": "Retired Date",
+      "description": "The date from which the concept was published as retired",
+      "type": "dateTime"
+    },
+    {
+      "code": "Status",
+      "description": "The status of the concept can be one of: draft | active | retired | unknown ",
+      "type": "string"
+    },
+    {
+      "code": "Web Order",
+      "description": "The web page display order to cater for logical groupings ",
+      "type": "integer"
+    }
+  ],
+  "concept": [
+    {
+      "code": "01",
+      "display": "Transfer of Clinical Responsibility",
+      "definition": "Transfer of Clinical Responsibility",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2015-08-23T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 1
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "display": "For Opinion Only",
+      "definition": "For Opinion Only",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2015-08-23T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 2
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "display": "For Diagnostic Test Only",
+      "definition": "For Diagnostic Test Only",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2015-08-23T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 3
+        }
+      ]
+    },
+    {
+      "code": "04",
+      "display": "New Referral (Non Transfer)",
+      "definition": "New Referral (Non Transfer)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2015-08-23T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 4
+        }
+      ]
+    },
+    {
+      "code": "96",
+      "display": "Other (not listed)",
+      "definition": "Other (not listed)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2017-09-25T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 5
+        }
+      ]
+    },
+    {
+      "code": "98",
+      "display": "Onward Referral Reason Not Applicable",
+      "definition": "Onward Referral Reason Not Applicable",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2015-08-23T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 0
+        },
+        {
+          "code": "Data Element",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        }
+      ]
+    },
+    {
+      "code": "99",
+      "display": "Not Known (Not Recorded)",
+      "definition": "Not Known (Not Recorded)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2017-03-28T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 0
+        },
+        {
+          "code": "Data Element",
+          "valueString": "ONWARD_REFERRAL_REASON"
+        }
+      ]
+    }
+  ]
+}

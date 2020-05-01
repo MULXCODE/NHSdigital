@@ -1,0 +1,144 @@
+# baseURI: null
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms: <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference: <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual: <http://topbraid.org/visual#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[
+  a visual:Graph ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://hl7.org/fhir#CodeSystem> ;
+      visual:height "89"^^xsd:int ;
+      visual:width "244"^^xsd:int ;
+      visual:x "746"^^xsd:int ;
+      visual:y "39"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://hl7.org/fhir#CodeSystem.Concept> ;
+      visual:height "71"^^xsd:int ;
+      visual:width "244"^^xsd:int ;
+      visual:x "1038"^^xsd:int ;
+      visual:y "32"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://hl7.org/fhir#ResourceContainer> ;
+      visual:height "53"^^xsd:int ;
+      visual:width "189"^^xsd:int ;
+      visual:x "502"^^xsd:int ;
+      visual:y "40"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#Document> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "107"^^xsd:int ;
+      visual:x "14"^^xsd:int ;
+      visual:y "50"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r> ;
+      visual:height "71"^^xsd:int ;
+      visual:width "286"^^xsd:int ;
+      visual:x "63"^^xsd:int ;
+      visual:y "144"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "130"^^xsd:int ;
+      visual:x "263"^^xsd:int ;
+      visual:y "266"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "130"^^xsd:int ;
+      visual:x "405"^^xsd:int ;
+      visual:y "360"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0> ;
+      visual:height "71"^^xsd:int ;
+      visual:width "316"^^xsd:int ;
+      visual:x "563"^^xsd:int ;
+      visual:y "448"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "137"^^xsd:int ;
+      visual:x "958"^^xsd:int ;
+      visual:y "463"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37-0> ;
+      visual:height "53"^^xsd:int ;
+      visual:width "130"^^xsd:int ;
+      visual:x "1208"^^xsd:int ;
+      visual:y "143"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37-1> ;
+      visual:height "53"^^xsd:int ;
+      visual:width "199"^^xsd:int ;
+      visual:x "1208"^^xsd:int ;
+      visual:y "383"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37-2> ;
+      visual:height "53"^^xsd:int ;
+      visual:width "199"^^xsd:int ;
+      visual:x "1208"^^xsd:int ;
+      visual:y "263"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37-3> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "130"^^xsd:int ;
+      visual:x "1208"^^xsd:int ;
+      visual:y "755"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37-4> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "130"^^xsd:int ;
+      visual:x "1208"^^xsd:int ;
+      visual:y "671"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37-5> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "130"^^xsd:int ;
+      visual:x "1208"^^xsd:int ;
+      visual:y "587"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37-6> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "130"^^xsd:int ;
+      visual:x "1208"^^xsd:int ;
+      visual:y "503"^^xsd:int ;
+    ] ;
+  visual:depicts <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#r-1-0-0-37> ;
+  rdfs:label "r-1-0-0-37 Graph" ;
+].

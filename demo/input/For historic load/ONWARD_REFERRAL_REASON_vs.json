@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "language": "en-GB",
+  "url": "http://www.datadictionary.nhs.uk/valueSet/onward_referral_reason",
+  "identifier": [
+    {
+      "system": "http://www.datadictionary.nhs.uk/V3",
+      "value": "http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/o/oc/onward_referral_reason_de.asp"
+    }
+  ],
+  "version": "1.0.2",
+  "name": "ONWARD_REFERRAL_REASON",
+  "title": "Onward Referral Reason",
+  "status": "active",
+  "experimental": false,
+  "date": "2017-09-26T15:35:02+01:00",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital Data Model and Dictionary Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "information.standards@nhs.net"
+        },
+        {
+          "system": "url",
+          "value": "http://www.datadictionary.nhs.uk/"
+        }
+      ]
+    }
+  ],
+  "description": "This value set represents the active and retired concepts of the NHS Data Dictionary V3 data element ONWARD REFERRAL REASON, http://www.datadictionary.nhs.uk/valueSet/onward_referral_reason as of 26th of September 2017. Further information can be found here: http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/o/oc/onward_referral_reason_de.asp",
+  "immutable": true,
+  "copyright": "Copyright © NHS Digital",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.datadictionary.nhs.uk/code_system/union/onward_referral_reason",
+        "version": "1.0.2",
+        "filter": [
+          {
+            "property": "Data Element",
+            "op": "=",
+            "value": "ONWARD_REFERRAL_REASON"
+          }
+        ]
+      }
+    ]
+  }
+}

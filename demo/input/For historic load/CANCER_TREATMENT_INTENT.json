@@ -1,0 +1,498 @@
+{
+  "resourceType": "CodeSystem",
+  "language": "en-GB",
+  "url": "https://www.datadictionary.nhs.uk/code_system/union/cancer_treatment_intent",
+  "identifier": {
+    "system": "http://www.datadictionary.nhs.uk/V3",
+    "value": "http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/cancer_treatment_intent_de.asp"
+  },
+  "version": "3.1.1",
+  "name": "CANCER_TREATMENT_INTENT",
+  "title": "Cancer Treatment Intent",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-11-26T07:43:33+00:00",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital Data Model and Dictionary Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "information.standards@nhs.net"
+        },
+        {
+          "system": "url",
+          "value": "http://www.datadictionary.nhs.uk/"
+        }
+      ]
+    }
+  ],
+  "description": "This code system represents a union of any National, Permitted and Default Codes from the NHS Data Dictionary attribute CANCER_TREATMENT_INTENT, http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/cancer_treatment_intent_de.asp and its linked data elements as of 26th of November 2018. Note that this code system may contain active and retired concepts.",
+  "copyright": "Copyright © NHS Digital",
+  "caseSensitive": false,
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "versionNeeded": false,
+  "content": "complete",
+  "count": 13,
+  "filter": [
+    {
+      "code": "Data Element",
+      "description": "Filter to identify which Data Elements a concept relates to",
+      "operator": [
+        "in",
+        "=",
+        "exists",
+        "not-in"
+      ],
+      "value": "Data Element"
+    },
+    {
+      "code": "Data Attribute",
+      "description": "Filter to identify which Data Attribute a concept relates to",
+      "operator": [
+        "in",
+        "=",
+        "exists",
+        "not-in"
+      ],
+      "value": "Data Attribute"
+    },
+    {
+      "code": "Publish Date",
+      "description": "Filter to enable filtering by Publish date/s",
+      "operator": [
+        "in",
+        "=",
+        "exists",
+        "not-in"
+      ],
+      "value": "Publish Date"
+    },
+    {
+      "code": "Retired Date",
+      "description": "Filter to enable filtering by date of retirement",
+      "operator": [
+        "in",
+        "=",
+        "exists",
+        "not-in"
+      ],
+      "value": "Retired Date"
+    },
+    {
+      "code": "Status",
+      "description": "Filter to identify status of a concept",
+      "operator": [
+        "="
+      ],
+      "value": "Status"
+    }
+  ],
+  "property": [
+    {
+      "code": "Data Element",
+      "description": "The Data Element that the concept relates to",
+      "type": "string"
+    },
+    {
+      "code": "Data Attribute",
+      "description": "The Data Attribute that the concept relates to",
+      "type": "string"
+    },
+    {
+      "code": "Publish Date",
+      "description": "The date on which the concept was first published and/or updated",
+      "type": "dateTime"
+    },
+    {
+      "code": "Retired Date",
+      "description": "The date from which the concept was published as retired",
+      "type": "dateTime"
+    },
+    {
+      "code": "Status",
+      "description": "The status of the concept can be one of: draft | active | retired | unknown ",
+      "type": "string"
+    },
+    {
+      "code": "Web Order",
+      "description": "The web page display order to cater for logical groupings ",
+      "type": "integer"
+    }
+  ],
+  "concept": [
+    {
+      "code": "A",
+      "display": "Adjuvant (Retired 1 January 2013)",
+      "definition": "Adjuvant (Retired 1 January 2013)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2012-12-20T00:00:00+00:00"
+        },
+        {
+          "code": "Retired Date",
+          "valueDateTime": "2013-01-01T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "retired"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 1
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "display": "Curative (Retired 1 April 2018)",
+      "definition": "Curative (Retired 1 April 2018)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-03-14T00:00:00+00:00"
+        },
+        {
+          "code": "Retired Date",
+          "valueDateTime": "2018-03-31T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "retired"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 2
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "display": "Diagnostic (Retired 1 April 2018)",
+      "definition": "Diagnostic (Retired 1 April 2018)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-03-14T00:00:00+00:00"
+        },
+        {
+          "code": "Retired Date",
+          "valueDateTime": "2018-03-31T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "retired"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 3
+        }
+      ]
+    },
+    {
+      "code": "N",
+      "display": "Neoadjuvant (Retired 1 January 2013)",
+      "definition": "Neoadjuvant (Retired 1 January 2013)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2012-12-20T00:00:00+00:00"
+        },
+        {
+          "code": "Retired Date",
+          "valueDateTime": "2013-01-01T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "retired"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 4
+        }
+      ]
+    },
+    {
+      "code": "P",
+      "display": "Palliative (Retired 1 April 2018)",
+      "definition": "Palliative (Retired 1 April 2018)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-03-14T00:00:00+00:00"
+        },
+        {
+          "code": "Retired Date",
+          "valueDateTime": "2018-03-31T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "retired"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 6
+        }
+      ]
+    },
+    {
+      "code": "S",
+      "display": "Staging (Retired 1 April 2018)",
+      "definition": "Staging (Retired 1 April 2018)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-03-14T00:00:00+00:00"
+        },
+        {
+          "code": "Retired Date",
+          "valueDateTime": "2018-03-31T01:00:00+01:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "retired"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 5
+        }
+      ]
+    },
+    {
+      "code": "01",
+      "display": "Curative",
+      "definition": "Curative",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-03-14T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 7
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "display": "Palliative",
+      "definition": "Palliative",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-03-14T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 8
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "display": "Disease Modification (specific to drug treatment)",
+      "definition": "Disease Modification (specific to drug treatment)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-11-26T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 9
+        }
+      ]
+    },
+    {
+      "code": "04",
+      "display": "Diagnostic (specific to surgery)",
+      "definition": "Diagnostic (specific to surgery)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-11-26T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 10
+        }
+      ]
+    },
+    {
+      "code": "05",
+      "display": "Staging (specific to surgery)",
+      "definition": "Staging (specific to surgery)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-11-26T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 11
+        }
+      ]
+    },
+    {
+      "code": "08",
+      "display": "Other (not listed)",
+      "definition": "Other (not listed)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-03-14T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Data Attribute",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 12
+        }
+      ]
+    },
+    {
+      "code": "09",
+      "display": "Not known (Not Recorded)",
+      "definition": "Not known (Not Recorded)",
+      "property": [
+        {
+          "code": "Publish Date",
+          "valueDateTime": "2018-03-14T00:00:00+00:00"
+        },
+        {
+          "code": "Status",
+          "valueString": "active"
+        },
+        {
+          "code": "Web Order",
+          "valueInteger": 0
+        },
+        {
+          "code": "Data Element",
+          "valueString": "CANCER_TREATMENT_INTENT"
+        }
+      ]
+    }
+  ]
+}

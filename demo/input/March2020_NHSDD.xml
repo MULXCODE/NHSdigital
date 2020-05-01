@@ -1,0 +1,1930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir/fhir-single.xsd">
+	<type value="batch"/>	
+	<entry>
+		<resource>
+			<CodeSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir/fhir-single.xsd">
+				<language value="en-GB"/>
+				<url value="https://www.datadictionary.nhs.uk/code_system/union/care_professional_type"/>
+				<identifier>
+					<system value="http://www.datadictionary.nhs.uk/V3"/>
+					<value value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/card/care_professional_type_de.asp"/>
+				</identifier>
+				<version value="1.1.0"/>
+				<name value="CARE_PROFESSIONAL_TYPE"/>
+				<title value="Care Professional Type"/>
+				<status value="active"/>
+				<experimental value="false"/>
+				<date value="2020-03-27T07:21:43+00:00"/>
+				<publisher value="NHS Digital"/>
+				<contact>
+					<name value="NHS Digital Data Model and Dictionary Service"/>
+					<telecom>
+						<system value="email"/>
+						<value value="information.standards@nhs.net"/>
+					</telecom>
+					<telecom>
+						<system value="url"/>
+						<value value="http://www.datadictionary.nhs.uk/"/>
+					</telecom>
+				</contact>
+				<description value="This code system represents a union of any National, Permitted and Default Codes from the NHS Data Dictionary attribute CARE_PROFESSIONAL_TYPE, http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/card/care_professional_type_de.asp and its linked data elements as of 27th of March 2020. Note that this code system may contain active and retired concepts."/>
+				<copyright value="Copyright © NHS Digital"/>
+				<caseSensitive value="false"/>
+				<hierarchyMeaning value="is-a"/>
+				<compositional value="false"/>
+				<versionNeeded value="false"/>
+				<content value="complete"/>
+				<count value="41"/>
+				<filter>
+					<code value="Data Element"/>
+					<description value="Filter to identify which Data Elements a concept relates to"/>
+					<operator value="in"/>
+					<operator value="="/>
+					<operator value="exists"/>
+					<operator value="not-in"/>
+					<value value="Data Element"/>
+				</filter>
+				<filter>
+					<code value="Data Attribute"/>
+					<description value="Filter to identify which Data Attribute a concept relates to"/>
+					<operator value="in"/>
+					<operator value="="/>
+					<operator value="exists"/>
+					<operator value="not-in"/>
+					<value value="Data Attribute"/>
+				</filter>
+				<filter>
+					<code value="Publish Date"/>
+					<description value="Filter to enable filtering by Publish date/s"/>
+					<operator value="in"/>
+					<operator value="="/>
+					<operator value="exists"/>
+					<operator value="not-in"/>
+					<value value="Publish Date"/>
+				</filter>
+				<filter>
+					<code value="Retired Date"/>
+					<description value="Filter to enable filtering by date of retirement"/>
+					<operator value="in"/>
+					<operator value="="/>
+					<operator value="exists"/>
+					<operator value="not-in"/>
+					<value value="Retired Date"/>
+				</filter>
+				<filter>
+					<code value="Status"/>
+					<description value="Filter to identify status of a concept"/>
+					<operator value="="/>
+					<value value="Status"/>
+				</filter>
+				<property>
+					<code value="Data Element"/>
+					<description value="The Data Element that the concept relates to"/>
+					<type value="string"/>
+				</property>
+				<property>
+					<code value="Data Attribute"/>
+					<description value="The Data Attribute that the concept relates to"/>
+					<type value="string"/>
+				</property>
+				<property>
+					<code value="Publish Date"/>
+					<description value="The date on which the concept was first published and/or updated"/>
+					<type value="dateTime"/>
+				</property>
+				<property>
+					<code value="Retired Date"/>
+					<description value="The date from which the concept was published as retired"/>
+					<type value="dateTime"/>
+				</property>
+				<property>
+					<code value="Status"/>
+					<description value="The status of the concept can be one of: draft | active | retired | unknown "/>
+					<type value="string"/>
+				</property>
+				<property>
+					<code value="Web Order"/>
+					<description value="The web page display order to cater for logical groupings "/>
+					<type value="integer"/>
+				</property>
+				<concept>
+					<code value="XXX"/>
+					<display value="Other (not listed)"/>
+					<definition value="Other (not listed)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-03-14T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="41"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="010"/>
+					<display value="Arts Therapist (Art, Music and Drama Therapists)"/>
+					<definition value="Arts Therapist (Art, Music and Drama Therapists)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="1"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="020"/>
+					<display value="Biomedical Scientist"/>
+					<definition value="Biomedical Scientist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="2"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="030"/>
+					<display value="Chiropodist / Podiatrist"/>
+					<definition value="Chiropodist / Podiatrist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="3"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="040"/>
+					<display value="Chiropractor"/>
+					<definition value="Chiropractor"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="4"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="050"/>
+					<display value="Clinical Scientist"/>
+					<definition value="Clinical Scientist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="5"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="060"/>
+					<display value="CONSULTANT"/>
+					<definition value="CONSULTANT"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="6"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="070"/>
+					<display value="Clinical Dental Technician"/>
+					<definition value="Clinical Dental Technician"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="7"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="080"/>
+					<display value="Dental Hygienist"/>
+					<definition value="Dental Hygienist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="8"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="090"/>
+					<display value="Dental Nurse"/>
+					<definition value="Dental Nurse"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="9"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="100"/>
+					<display value="Dental Technician"/>
+					<definition value="Dental Technician"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="10"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="110"/>
+					<display value="Dental Therapist"/>
+					<definition value="Dental Therapist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="11"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="120"/>
+					<display value="Orthodontic Therapist"/>
+					<definition value="Orthodontic Therapist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="12"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="130"/>
+					<display value="Dietitian"/>
+					<definition value="Dietitian"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="13"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="140"/>
+					<display value="Dispensing Optician"/>
+					<definition value="Dispensing Optician"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="14"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="150"/>
+					<display value="GENERAL DENTAL PRACTITIONER"/>
+					<definition value="GENERAL DENTAL PRACTITIONER"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="15"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="160"/>
+					<display value="GENERAL MEDICAL PRACTITIONER"/>
+					<definition value="GENERAL MEDICAL PRACTITIONER"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="16"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="170"/>
+					<display value="MIDWIFE"/>
+					<definition value="MIDWIFE"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="17"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="180"/>
+					<display value="NURSE"/>
+					<definition value="NURSE"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="18"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="190"/>
+					<display value="Occupational Therapist"/>
+					<definition value="Occupational Therapist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="19"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="200"/>
+					<display value="Operating Department Practitioner"/>
+					<definition value="Operating Department Practitioner"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="20"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="210"/>
+					<display value="OPHTHALMIC MEDICAL PRACTITIONER"/>
+					<definition value="OPHTHALMIC MEDICAL PRACTITIONER"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="21"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="220"/>
+					<display value="OPTOMETRIST"/>
+					<definition value="OPTOMETRIST"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="22"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="230"/>
+					<display value="Orthoptist"/>
+					<definition value="Orthoptist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="23"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="240"/>
+					<display value="Orthotist"/>
+					<definition value="Orthotist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="24"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="250"/>
+					<display value="Osteopath"/>
+					<definition value="Osteopath"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="25"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="260"/>
+					<display value="Paramedic"/>
+					<definition value="Paramedic"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="26"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="270"/>
+					<display value="Pharmacist"/>
+					<definition value="Pharmacist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="27"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="280"/>
+					<display value="Physiotherapist"/>
+					<definition value="Physiotherapist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="28"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="290"/>
+					<display value="Practitioner Psychologist"/>
+					<definition value="Practitioner Psychologist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="29"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="300"/>
+					<display value="Prosthetist"/>
+					<definition value="Prosthetist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="30"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="310"/>
+					<display value="Radiographer"/>
+					<definition value="Radiographer"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="31"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="320"/>
+					<display value="Specialist Community Public Health Nurse: Family Health Nurse"/>
+					<definition value="Specialist Community Public Health Nurse: Family Health Nurse"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="32"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="330"/>
+					<display value="Specialist Community Public Health Nurse: Health Visitor"/>
+					<definition value="Specialist Community Public Health Nurse: Health Visitor"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="33"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="340"/>
+					<display value="Specialist Community Public Health Nurse: Occupational Health Nurse"/>
+					<definition value="Specialist Community Public Health Nurse: Occupational Health Nurse"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="34"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="350"/>
+					<display value="Specialist Community Public Health Nurse: School Nurse"/>
+					<definition value="Specialist Community Public Health Nurse: School Nurse"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="35"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="360"/>
+					<display value="Speech and Language Therapist"/>
+					<definition value="Speech and Language Therapist"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-05-22T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="36"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="370"/>
+					<display value="Hearing Aid Dispenser"/>
+					<definition value="Hearing Aid Dispenser"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-12-20T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="37"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="380"/>
+					<display value="Pharmacy Technician"/>
+					<definition value="Pharmacy Technician"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-12-20T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="38"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="390"/>
+					<display value="Social Worker in England"/>
+					<definition value="Social Worker in England"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-12-20T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="39"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="400"/>
+					<display value="Improving Access to Psychological Therapies Care Professional"/>
+					<definition value="Improving Access to Psychological Therapies Care Professional"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2020-03-27T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CARE_PROFESSIONAL_TYPE"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="40"/>
+					</property>
+				</concept>
+			</CodeSystem>
+		</resource>
+	</entry>
+	<entry>
+		
+	</entry>
+	<entry>
+		<resource>
+			<CodeSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir/fhir-single.xsd">
+				<language value="en-GB"/>
+				<url value="https://www.datadictionary.nhs.uk/code_system/union/cancer_treatment_intent"/>
+				<identifier>
+					<system value="http://www.datadictionary.nhs.uk/V3"/>
+					<value value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/cancer_treatment_intent_de.asp"/>
+				</identifier>
+				<version value="3.2.0"/>
+				<name value="CANCER_TREATMENT_INTENT"/>
+				<title value="Cancer Treatment Intent"/>
+				<status value="active"/>
+				<experimental value="false"/>
+				<date value="2020-03-27T07:21:43+00:00"/>
+				<publisher value="NHS Digital"/>
+				<contact>
+					<name value="NHS Digital Data Model and Dictionary Service"/>
+					<telecom>
+						<system value="email"/>
+						<value value="information.standards@nhs.net"/>
+					</telecom>
+					<telecom>
+						<system value="url"/>
+						<value value="http://www.datadictionary.nhs.uk/"/>
+					</telecom>
+				</contact>
+				<description value="This code system represents a union of any National, Permitted and Default Codes from the NHS Data Dictionary attribute CANCER_TREATMENT_INTENT, http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/cancer_treatment_intent_de.asp and its linked data elements as of 27th of March 2020. Note that this code system may contain active and retired concepts."/>
+				<copyright value="Copyright © NHS Digital"/>
+				<caseSensitive value="false"/>
+				<hierarchyMeaning value="is-a"/>
+				<compositional value="false"/>
+				<versionNeeded value="false"/>
+				<content value="complete"/>
+				<count value="15"/>
+				<filter>
+					<code value="Data Element"/>
+					<description value="Filter to identify which Data Elements a concept relates to"/>
+					<operator value="in"/>
+					<operator value="="/>
+					<operator value="exists"/>
+					<operator value="not-in"/>
+					<value value="Data Element"/>
+				</filter>
+				<filter>
+					<code value="Data Attribute"/>
+					<description value="Filter to identify which Data Attribute a concept relates to"/>
+					<operator value="in"/>
+					<operator value="="/>
+					<operator value="exists"/>
+					<operator value="not-in"/>
+					<value value="Data Attribute"/>
+				</filter>
+				<filter>
+					<code value="Publish Date"/>
+					<description value="Filter to enable filtering by Publish date/s"/>
+					<operator value="in"/>
+					<operator value="="/>
+					<operator value="exists"/>
+					<operator value="not-in"/>
+					<value value="Publish Date"/>
+				</filter>
+				<filter>
+					<code value="Retired Date"/>
+					<description value="Filter to enable filtering by date of retirement"/>
+					<operator value="in"/>
+					<operator value="="/>
+					<operator value="exists"/>
+					<operator value="not-in"/>
+					<value value="Retired Date"/>
+				</filter>
+				<filter>
+					<code value="Status"/>
+					<description value="Filter to identify status of a concept"/>
+					<operator value="="/>
+					<value value="Status"/>
+				</filter>
+				<property>
+					<code value="Data Element"/>
+					<description value="The Data Element that the concept relates to"/>
+					<type value="string"/>
+				</property>
+				<property>
+					<code value="Data Attribute"/>
+					<description value="The Data Attribute that the concept relates to"/>
+					<type value="string"/>
+				</property>
+				<property>
+					<code value="Publish Date"/>
+					<description value="The date on which the concept was first published and/or updated"/>
+					<type value="dateTime"/>
+				</property>
+				<property>
+					<code value="Retired Date"/>
+					<description value="The date from which the concept was published as retired"/>
+					<type value="dateTime"/>
+				</property>
+				<property>
+					<code value="Status"/>
+					<description value="The status of the concept can be one of: draft | active | retired | unknown "/>
+					<type value="string"/>
+				</property>
+				<property>
+					<code value="Web Order"/>
+					<description value="The web page display order to cater for logical groupings "/>
+					<type value="integer"/>
+				</property>
+				<concept>
+					<code value="A"/>
+					<display value="Adjuvant (Retired 1 January 2013)"/>
+					<definition value="Adjuvant (Retired 1 January 2013)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-12-20T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Retired Date"/>
+						<valueDateTime value="2013-01-01T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="retired"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="1"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="C"/>
+					<display value="Curative (Retired 1 April 2018)"/>
+					<definition value="Curative (Retired 1 April 2018)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-03-14T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Retired Date"/>
+						<valueDateTime value="2018-03-31T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="retired"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="2"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="D"/>
+					<display value="Diagnostic (Retired 1 April 2018)"/>
+					<definition value="Diagnostic (Retired 1 April 2018)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-03-14T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Retired Date"/>
+						<valueDateTime value="2018-03-31T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="retired"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="3"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="N"/>
+					<display value="Neoadjuvant (Retired 1 January 2013)"/>
+					<definition value="Neoadjuvant (Retired 1 January 2013)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2012-12-20T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Retired Date"/>
+						<valueDateTime value="2013-01-01T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="retired"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="4"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="P"/>
+					<display value="Palliative (Retired 1 April 2018)"/>
+					<definition value="Palliative (Retired 1 April 2018)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-03-14T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Retired Date"/>
+						<valueDateTime value="2018-03-31T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="retired"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="6"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="S"/>
+					<display value="Staging (Retired 1 April 2018)"/>
+					<definition value="Staging (Retired 1 April 2018)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-03-14T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Retired Date"/>
+						<valueDateTime value="2018-03-31T01:00:00+01:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="retired"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="5"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="01"/>
+					<display value="Curative"/>
+					<definition value="Curative"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-03-14T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="7"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="02"/>
+					<display value="Palliative"/>
+					<definition value="Palliative"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-03-14T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="8"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="03"/>
+					<display value="Disease Modification (specific to drug treatment)"/>
+					<definition value="Disease Modification (specific to drug treatment)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-11-26T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="9"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="04"/>
+					<display value="Diagnostic (specific to surgery)"/>
+					<definition value="Diagnostic (specific to surgery)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-11-26T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="10"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="05"/>
+					<display value="Staging (specific to surgery)"/>
+					<definition value="Staging (specific to surgery)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-11-26T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="11"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="06"/>
+					<display value="Uncertain of treatment intent"/>
+					<definition value="Uncertain of treatment intent"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2020-03-27T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="12"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="08"/>
+					<display value="Other (not listed) (Retired 1 April 2020)"/>
+					<definition value="Other (not listed) (Retired 1 April 2020)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2020-03-27T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="13"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="09"/>
+					<display value="Not known (Not Recorded)"/>
+					<definition value="Not known (Not Recorded)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2018-03-14T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="0"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+				</concept>
+				<concept>
+					<code value="98"/>
+					<display value="Other (not listed)"/>
+					<definition value="Other (not listed)"/>
+					<property>
+						<code value="Publish Date"/>
+						<valueDateTime value="2020-03-27T00:00:00+00:00"/>
+					</property>
+					<property>
+						<code value="Status"/>
+						<valueString value="active"/>
+					</property>
+					<property>
+						<code value="Data Attribute"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Data Element"/>
+						<valueString value="CANCER_TREATMENT_INTENT"/>
+					</property>
+					<property>
+						<code value="Web Order"/>
+						<valueInteger value="14"/>
+					</property>
+				</concept>
+			</CodeSystem>
+		</resource>
+	</entry>	
+	<entry>
+		<resource>
+			<CodeSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir/fhir-single.xsd">
+   <language value="en-GB"/>
+   <url value="https://www.datadictionary.nhs.uk/code_system/union/onward_referral_reason"/>
+   <identifier>
+      <system value="http://www.datadictionary.nhs.uk/V3"/>
+      <value value="http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/onward_referral_reason_de.asp"/>
+   </identifier>
+   <version value="1.1.0"/>
+   <name value="ONWARD_REFERRAL_REASON"/>
+   <title value="Onward Referral Reason"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2020-03-27T07:21:43+00:00"/>
+   <publisher value="NHS Digital"/>
+   <contact>
+      <name value="NHS Digital Data Model and Dictionary Service"/>
+      <telecom>
+         <system value="email"/>
+         <value value="information.standards@nhs.net"/>
+      </telecom>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.datadictionary.nhs.uk/"/>
+      </telecom>
+   </contact>
+   <description value="This code system represents a union of any National, Permitted and Default Codes from the NHS Data Dictionary attribute ONWARD_REFERRAL_REASON, http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/onward_referral_reason_de.asp and its linked data elements as of 27th of March 2020. Note that this code system may contain active and retired concepts."/>
+   <copyright value="Copyright © NHS Digital"/>
+   <caseSensitive value="false"/>
+   <hierarchyMeaning value="is-a"/>
+   <compositional value="false"/>
+   <versionNeeded value="false"/>
+   <content value="complete"/>
+   <count value="9"/>
+   <filter>
+      <code value="Data Element"/>
+      <description value="Filter to identify which Data Elements a concept relates to"/>
+      <operator value="in"/>
+      <operator value="="/>
+      <operator value="exists"/>
+      <operator value="not-in"/>
+      <value value="Data Element"/>
+   </filter>
+   <filter>
+      <code value="Data Attribute"/>
+      <description value="Filter to identify which Data Attribute a concept relates to"/>
+      <operator value="in"/>
+      <operator value="="/>
+      <operator value="exists"/>
+      <operator value="not-in"/>
+      <value value="Data Attribute"/>
+   </filter>
+   <filter>
+      <code value="Publish Date"/>
+      <description value="Filter to enable filtering by Publish date/s"/>
+      <operator value="in"/>
+      <operator value="="/>
+      <operator value="exists"/>
+      <operator value="not-in"/>
+      <value value="Publish Date"/>
+   </filter>
+   <filter>
+      <code value="Retired Date"/>
+      <description value="Filter to enable filtering by date of retirement"/>
+      <operator value="in"/>
+      <operator value="="/>
+      <operator value="exists"/>
+      <operator value="not-in"/>
+      <value value="Retired Date"/>
+   </filter>
+   <filter>
+      <code value="Status"/>
+      <description value="Filter to identify status of a concept"/>
+      <operator value="="/>
+      <value value="Status"/>
+   </filter>
+   <property>
+      <code value="Data Element"/>
+      <description value="The Data Element that the concept relates to"/>
+      <type value="string"/>
+   </property>
+   <property>
+      <code value="Data Attribute"/>
+      <description value="The Data Attribute that the concept relates to"/>
+      <type value="string"/>
+   </property>
+   <property>
+      <code value="Publish Date"/>
+      <description value="The date on which the concept was first published and/or updated"/>
+      <type value="dateTime"/>
+   </property>
+   <property>
+      <code value="Retired Date"/>
+      <description value="The date from which the concept was published as retired"/>
+      <type value="dateTime"/>
+   </property>
+   <property>
+      <code value="Status"/>
+      <description value="The status of the concept can be one of: draft | active | retired | unknown "/>
+      <type value="string"/>
+   </property>
+   <property>
+      <code value="Web Order"/>
+      <description value="The web page display order to cater for logical groupings "/>
+      <type value="integer"/>
+   </property>
+   <concept>
+      <code value="01"/>
+      <display value="Transfer of Clinical Responsibility"/>
+      <definition value="Transfer of Clinical Responsibility"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2015-08-23T01:00:00+01:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Data Attribute"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="1"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="02"/>
+      <display value="For Opinion Only"/>
+      <definition value="For Opinion Only"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2015-08-23T01:00:00+01:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Data Attribute"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="2"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="03"/>
+      <display value="For Diagnostic Test Only"/>
+      <definition value="For Diagnostic Test Only"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2015-08-23T01:00:00+01:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Data Attribute"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="3"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="04"/>
+      <display value="New Referral (Non Transfer)"/>
+      <definition value="New Referral (Non Transfer)"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2015-08-23T01:00:00+01:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Data Attribute"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="4"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="05"/>
+      <display value="Stepped up from low intensity Improving Access to Psychological Therapies Service"/>
+      <definition value="Stepped up from low intensity Improving Access to Psychological Therapies Service"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2020-03-27T00:00:00+00:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Data Attribute"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="5"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="06"/>
+      <display value="Stepped down from high intensity Improving Access to Psychological Therapies Service"/>
+      <definition value="Stepped down from high intensity Improving Access to Psychological Therapies Service"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2020-03-27T00:00:00+00:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Data Attribute"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="6"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="96"/>
+      <display value="Other (not listed)"/>
+      <definition value="Other (not listed)"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2017-09-25T01:00:00+01:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Data Attribute"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="7"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="98"/>
+      <display value="Onward Referral Reason Not Applicable"/>
+      <definition value="Onward Referral Reason Not Applicable"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2015-08-23T01:00:00+01:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="0"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="99"/>
+      <display value="Not Known (Not Recorded)"/>
+      <definition value="Not Known (Not Recorded)"/>
+      <property>
+         <code value="Publish Date"/>
+         <valueDateTime value="2017-03-28T01:00:00+01:00"/>
+      </property>
+      <property>
+         <code value="Status"/>
+         <valueString value="active"/>
+      </property>
+      <property>
+         <code value="Web Order"/>
+         <valueInteger value="0"/>
+      </property>
+      <property>
+         <code value="Data Element"/>
+         <valueString value="ONWARD_REFERRAL_REASON"/>
+      </property>
+   </concept>
+</CodeSystem>
+		</resource>
+	</entry>	
+	<entry>
+		<resource>
+			<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir/fhir-single.xsd">
+				<language value="en-GB"/>
+				<url value="http://www.datadictionary.nhs.uk/valueSet/cancer_treatment_intent"/>
+				<identifier>
+					<system value="http://www.datadictionary.nhs.uk/V3"/>
+					<value value="http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/c/cancer_treatment_intent_de.asp"/>
+				</identifier>
+				<version value="4.1.0"/>
+				<name value="CANCER_TREATMENT_INTENT"/>
+				<title value="Cancer Treatment Intent"/>
+				<status value="active"/>
+				<experimental value="false"/>
+				<date value="2020-03-27T07:21:43+00:00"/>
+				<publisher value="NHS Digital"/>
+				<contact>
+					<name value="NHS Digital Data Model and Dictionary Service"/>
+					<telecom>
+						<system value="email"/>
+						<value value="information.standards@nhs.net"/>
+					</telecom>
+					<telecom>
+						<system value="url"/>
+						<value value="http://www.datadictionary.nhs.uk/"/>
+					</telecom>
+				</contact>
+				<description value="This value set represents the active and retired concepts of the NHS Data Dictionary V3 data element CANCER TREATMENT INTENT, http://www.datadictionary.nhs.uk/valueSet/cancer_treatment_intent as of 27th of March 2020. Further information can be found here: http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/c/cancer_treatment_intent_de.asp"/>
+				<immutable value="true"/>
+				<copyright value="Copyright © NHS Digital"/>
+				<compose>
+					<include>
+						<system value="https://www.datadictionary.nhs.uk/code_system/union/cancer_treatment_intent"/>
+						<version value="3.2.0"/>
+						<filter>
+							<property value="Data Element"/>
+							<op value="="/>
+							<value value="CANCER_TREATMENT_INTENT"/>
+						</filter>
+					</include>
+				</compose>
+			</ValueSet>
+		</resource>
+	</entry>	
+	<entry>
+		<resource>
+			<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir/fhir-single.xsd">
+				<language value="en-GB"/>
+				<url value="http://www.datadictionary.nhs.uk/valueSet/onward_referral_reason"/>
+				<identifier>
+					<system value="http://www.datadictionary.nhs.uk/V3"/>
+					<value value="http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/o/oc/onward_referral_reason_de.asp"/>
+				</identifier>
+				<version value="1.1.0"/>
+				<name value="ONWARD_REFERRAL_REASON"/>
+				<title value="Onward Referral Reason"/>
+				<status value="active"/>
+				<experimental value="false"/>
+				<date value="2020-03-27T07:21:43+00:00"/>
+				<publisher value="NHS Digital"/>
+				<contact>
+					<name value="NHS Digital Data Model and Dictionary Service"/>
+					<telecom>
+						<system value="email"/>
+						<value value="information.standards@nhs.net"/>
+					</telecom>
+					<telecom>
+						<system value="url"/>
+						<value value="http://www.datadictionary.nhs.uk/"/>
+					</telecom>
+				</contact>
+				<description value="This value set represents the active and retired concepts of the NHS Data Dictionary V3 data element ONWARD REFERRAL REASON, http://www.datadictionary.nhs.uk/valueSet/onward_referral_reason as of 27th of March 2020. Further information can be found here: http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/o/oc/onward_referral_reason_de.asp"/>
+				<immutable value="true"/>
+				<copyright value="Copyright © NHS Digital"/>
+				<compose>
+					<include>
+						<system value="https://www.datadictionary.nhs.uk/code_system/union/onward_referral_reason"/>
+						<version value="1.1.0"/>
+						<filter>
+							<property value="Data Element"/>
+							<op value="="/>
+							<value value="ONWARD_REFERRAL_REASON"/>
+						</filter>
+					</include>
+				</compose>
+			</ValueSet>
+		</resource>
+	</entry>	
+</Bundle>

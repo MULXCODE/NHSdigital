@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "language": "en-GB",
+  "url": "http://www.datadictionary.nhs.uk/valueSet/cancer_treatment_intent",
+  "identifier": [
+    {
+      "system": "http://www.datadictionary.nhs.uk/V3",
+      "value": "http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/c/cancer_treatment_intent_de.asp"
+    }
+  ],
+  "version": "4.0.1",
+  "name": "CANCER_TREATMENT_INTENT",
+  "title": "Cancer Treatment Intent",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-11-26T07:43:33+00:00",
+  "publisher": "NHS Digital",
+  "contact": [
+    {
+      "name": "NHS Digital Data Model and Dictionary Service",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "information.standards@nhs.net"
+        },
+        {
+          "system": "url",
+          "value": "http://www.datadictionary.nhs.uk/"
+        }
+      ]
+    }
+  ],
+  "description": "This value set represents the active and retired concepts of the NHS Data Dictionary V3 data element CANCER TREATMENT INTENT, http://www.datadictionary.nhs.uk/valueSet/cancer_treatment_intent as of 26th of November 2018. Further information can be found here: http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/c/cancer_treatment_intent_de.asp",
+  "immutable": true,
+  "copyright": "Copyright © NHS Digital",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.datadictionary.nhs.uk/code_system/union/cancer_treatment_intent",
+        "version": "3.1.1",
+        "filter": [
+          {
+            "property": "Data Element",
+            "op": "=",
+            "value": "CANCER_TREATMENT_INTENT"
+          }
+        ]
+      }
+    ]
+  }
+}
