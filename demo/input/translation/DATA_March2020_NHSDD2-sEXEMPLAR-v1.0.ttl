@@ -1,0 +1,3803 @@
+# baseURI: http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD
+# imports: http://hl7.topbraid.solutions/fhir/4.0.2/schema/fhir
+# imports: http://topbraid.org/sxml
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix fhir: <http://hl7.org/fhir#> .
+@prefix nhsdd: <http://nhsdigital.tobraid.solutions/demo/nhsdd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sxml: <http://topbraid.org/sxml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance#> .
+
+nhsdd:CD_1001
+  a fhir:ContactDetail ;
+  fhir:name "NHS Digital Data Model and Dictionary Service" ;
+  fhir:telecom nhsdd:r-1-0-0-10-1 ;
+  fhir:telecom nhsdd:r-1-0-0-10-2 ;
+  composite:index 10 ;
+.
+nhsdd:CSC_50721630-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "03"^^xsd:token ;
+  fhir:definition "Disease Modification (specific to drug treatment)" ;
+  fhir:display "Disease Modification (specific to drug treatment)" ;
+  fhir:property nhsdd:r-3-0-0-38-3 ;
+  fhir:property nhsdd:r-3-0-0-38-4 ;
+  fhir:property nhsdd:r-3-0-0-38-5 ;
+  fhir:property nhsdd:r-3-0-0-38-6 ;
+  fhir:property nhsdd:r-3-0-0-38-7 ;
+  composite:index 38 ;
+  rdfs:label "Disease Modification (specific to drug treatment)" ;
+.
+nhsdd:CSC_50721631-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "P"^^xsd:token ;
+  fhir:definition "Palliative (Retired 1 April 2018)" ;
+  fhir:display "Palliative (Retired 1 April 2018)" ;
+  fhir:property nhsdd:r-3-0-0-34-3 ;
+  fhir:property nhsdd:r-3-0-0-34-4 ;
+  fhir:property nhsdd:r-3-0-0-34-5 ;
+  fhir:property nhsdd:r-3-0-0-34-6 ;
+  fhir:property nhsdd:r-3-0-0-34-7 ;
+  fhir:property nhsdd:r-3-0-0-34-8 ;
+  composite:index 34 ;
+  rdfs:label "Palliative (Retired 1 April 2018)" ;
+.
+nhsdd:CSC_50721632-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "310"^^xsd:token ;
+  fhir:definition "Radiographer" ;
+  fhir:display "Radiographer" ;
+  fhir:property nhsdd:r-1-0-0-61-3 ;
+  fhir:property nhsdd:r-1-0-0-61-4 ;
+  fhir:property nhsdd:r-1-0-0-61-5 ;
+  fhir:property nhsdd:r-1-0-0-61-6 ;
+  fhir:property nhsdd:r-1-0-0-61-7 ;
+  composite:index 61 ;
+  rdfs:label "Radiographer" ;
+.
+nhsdd:CSC_50721633-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "01"^^xsd:token ;
+  fhir:definition "Transfer of Clinical Responsibility" ;
+  fhir:display "Transfer of Clinical Responsibility" ;
+  fhir:property nhsdd:CSP1_Publish_Date ;
+  fhir:property nhsdd:r-4-0-0-30-4 ;
+  fhir:property nhsdd:r-4-0-0-30-5 ;
+  fhir:property nhsdd:r-4-0-0-30-6 ;
+  fhir:property nhsdd:r-4-0-0-30-7 ;
+  composite:index 30 ;
+  rdfs:label "Transfer of Clinical Responsibility" ;
+.
+nhsdd:CSC_50721634-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "02"^^xsd:token ;
+  fhir:definition "Palliative" ;
+  fhir:display "Palliative" ;
+  fhir:property nhsdd:r-3-0-0-37-3 ;
+  fhir:property nhsdd:r-3-0-0-37-4 ;
+  fhir:property nhsdd:r-3-0-0-37-5 ;
+  fhir:property nhsdd:r-3-0-0-37-6 ;
+  fhir:property nhsdd:r-3-0-0-37-7 ;
+  composite:index 37 ;
+  rdfs:label "Palliative" ;
+.
+nhsdd:CSC_50721635-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "C"^^xsd:token ;
+  fhir:definition "Curative (Retired 1 April 2018)" ;
+  fhir:display "Curative (Retired 1 April 2018)" ;
+  fhir:property nhsdd:r-3-0-0-31-3 ;
+  fhir:property nhsdd:r-3-0-0-31-4 ;
+  fhir:property nhsdd:r-3-0-0-31-5 ;
+  fhir:property nhsdd:r-3-0-0-31-6 ;
+  fhir:property nhsdd:r-3-0-0-31-7 ;
+  fhir:property nhsdd:r-3-0-0-31-8 ;
+  composite:index 31 ;
+  rdfs:label "Curative (Retired 1 April 2018)" ;
+.
+nhsdd:CSC_50721636-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "N"^^xsd:token ;
+  fhir:definition "Neoadjuvant (Retired 1 January 2013)" ;
+  fhir:display "Neoadjuvant (Retired 1 January 2013)" ;
+  fhir:property nhsdd:r-3-0-0-33-3 ;
+  fhir:property nhsdd:r-3-0-0-33-4 ;
+  fhir:property nhsdd:r-3-0-0-33-5 ;
+  fhir:property nhsdd:r-3-0-0-33-6 ;
+  fhir:property nhsdd:r-3-0-0-33-7 ;
+  fhir:property nhsdd:r-3-0-0-33-8 ;
+  composite:index 33 ;
+  rdfs:label "Neoadjuvant (Retired 1 January 2013)" ;
+.
+nhsdd:CSC_50721637-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "300"^^xsd:token ;
+  fhir:definition "Prosthetist" ;
+  fhir:display "Prosthetist" ;
+  fhir:property nhsdd:r-1-0-0-60-3 ;
+  fhir:property nhsdd:r-1-0-0-60-4 ;
+  fhir:property nhsdd:r-1-0-0-60-5 ;
+  fhir:property nhsdd:r-1-0-0-60-6 ;
+  composite:index 60 ;
+  rdfs:label "Prosthetist" ;
+.
+nhsdd:CSC_50721638-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "150"^^xsd:token ;
+  fhir:definition "GENERAL DENTAL PRACTITIONER" ;
+  fhir:display "GENERAL DENTAL PRACTITIONER" ;
+  fhir:property nhsdd:r-1-0-0-45-3 ;
+  fhir:property nhsdd:r-1-0-0-45-4 ;
+  fhir:property nhsdd:r-1-0-0-45-5 ;
+  fhir:property nhsdd:r-1-0-0-45-6 ;
+  fhir:property nhsdd:r-1-0-0-45-7 ;
+  composite:index 45 ;
+  rdfs:label "GENERAL DENTAL PRACTITIONER" ;
+.
+nhsdd:CSC_50721639-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "110"^^xsd:token ;
+  fhir:definition "Dental Therapist" ;
+  fhir:display "Dental Therapist" ;
+  fhir:property nhsdd:r-1-0-0-41-3 ;
+  fhir:property nhsdd:r-1-0-0-41-4 ;
+  fhir:property nhsdd:r-1-0-0-41-5 ;
+  fhir:property nhsdd:r-1-0-0-41-6 ;
+  composite:index 41 ;
+  rdfs:label "Dental Therapist" ;
+.
+nhsdd:CSC_5072163a-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "090"^^xsd:token ;
+  fhir:definition "Dental Nurse" ;
+  fhir:display "Dental Nurse" ;
+  fhir:property nhsdd:r-1-0-0-39-3 ;
+  fhir:property nhsdd:r-1-0-0-39-4 ;
+  fhir:property nhsdd:r-1-0-0-39-5 ;
+  fhir:property nhsdd:r-1-0-0-39-6 ;
+  composite:index 39 ;
+  rdfs:label "Dental Nurse" ;
+.
+nhsdd:CSC_5072163b-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "98"^^xsd:token ;
+  fhir:definition "Other (not listed)" ;
+  fhir:display "Other (not listed)" ;
+  fhir:property nhsdd:r-3-0-0-44-3 ;
+  fhir:property nhsdd:r-3-0-0-44-4 ;
+  fhir:property nhsdd:r-3-0-0-44-5 ;
+  fhir:property nhsdd:r-3-0-0-44-6 ;
+  fhir:property nhsdd:r-3-0-0-44-7 ;
+  composite:index 44 ;
+  rdfs:label "Other (not listed)" ;
+.
+nhsdd:CSC_5072163c-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "06"^^xsd:token ;
+  fhir:definition "Stepped down from high intensity Improving Access to Psychological Therapies Service" ;
+  fhir:display "Stepped down from high intensity Improving Access to Psychological Therapies Service" ;
+  fhir:property nhsdd:r-4-0-0-35-3 ;
+  fhir:property nhsdd:r-4-0-0-35-4 ;
+  fhir:property nhsdd:r-4-0-0-35-5 ;
+  fhir:property nhsdd:r-4-0-0-35-6 ;
+  fhir:property nhsdd:r-4-0-0-35-7 ;
+  composite:index 35 ;
+  rdfs:label "Stepped down from high intensity Improving Access to Psychological Therapies Service" ;
+.
+nhsdd:CSC_5072163d-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "08"^^xsd:token ;
+  fhir:definition "Other (not listed) (Retired 1 April 2020)" ;
+  fhir:display "Other (not listed) (Retired 1 April 2020)" ;
+  fhir:property nhsdd:r-3-0-0-42-3 ;
+  fhir:property nhsdd:r-3-0-0-42-4 ;
+  fhir:property nhsdd:r-3-0-0-42-5 ;
+  fhir:property nhsdd:r-3-0-0-42-6 ;
+  fhir:property nhsdd:r-3-0-0-42-7 ;
+  composite:index 42 ;
+  rdfs:label "Other (not listed) (Retired 1 April 2020)" ;
+.
+nhsdd:CSC_5072163e-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "290"^^xsd:token ;
+  fhir:definition "Practitioner Psychologist" ;
+  fhir:display "Practitioner Psychologist" ;
+  fhir:property nhsdd:r-1-0-0-59-3 ;
+  fhir:property nhsdd:r-1-0-0-59-4 ;
+  fhir:property nhsdd:r-1-0-0-59-5 ;
+  fhir:property nhsdd:r-1-0-0-59-6 ;
+  composite:index 59 ;
+  rdfs:label "Practitioner Psychologist" ;
+.
+nhsdd:CSC_5072163f-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "250"^^xsd:token ;
+  fhir:definition "Osteopath" ;
+  fhir:display "Osteopath" ;
+  fhir:property nhsdd:r-1-0-0-55-3 ;
+  fhir:property nhsdd:r-1-0-0-55-4 ;
+  fhir:property nhsdd:r-1-0-0-55-5 ;
+  fhir:property nhsdd:r-1-0-0-55-6 ;
+  composite:index 55 ;
+  rdfs:label "Osteopath" ;
+.
+nhsdd:CSC_50721640-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "99"^^xsd:token ;
+  fhir:definition "Not Known (Not Recorded)" ;
+  fhir:display "Not Known (Not Recorded)" ;
+  fhir:property nhsdd:r-4-0-0-38-3 ;
+  fhir:property nhsdd:r-4-0-0-38-4 ;
+  fhir:property nhsdd:r-4-0-0-38-5 ;
+  fhir:property nhsdd:r-4-0-0-38-6 ;
+  composite:index 38 ;
+  rdfs:label "Not Known (Not Recorded)" ;
+.
+nhsdd:CSC_50721641-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "03"^^xsd:token ;
+  fhir:definition "For Diagnostic Test Only" ;
+  fhir:display "For Diagnostic Test Only" ;
+  fhir:property nhsdd:r-4-0-0-32-3 ;
+  fhir:property nhsdd:r-4-0-0-32-4 ;
+  fhir:property nhsdd:r-4-0-0-32-5 ;
+  fhir:property nhsdd:r-4-0-0-32-6 ;
+  fhir:property nhsdd:r-4-0-0-32-7 ;
+  composite:index 32 ;
+  rdfs:label "For Diagnostic Test Only" ;
+.
+nhsdd:CSC_50721642-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "05"^^xsd:token ;
+  fhir:definition "Stepped up from low intensity Improving Access to Psychological Therapies Service" ;
+  fhir:display "Stepped up from low intensity Improving Access to Psychological Therapies Service" ;
+  fhir:property nhsdd:r-4-0-0-34-3 ;
+  fhir:property nhsdd:r-4-0-0-34-4 ;
+  fhir:property nhsdd:r-4-0-0-34-5 ;
+  fhir:property nhsdd:r-4-0-0-34-6 ;
+  fhir:property nhsdd:r-4-0-0-34-7 ;
+  composite:index 34 ;
+  rdfs:label "Stepped up from low intensity Improving Access to Psychological Therapies Service" ;
+.
+nhsdd:CSC_50721643-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "040"^^xsd:token ;
+  fhir:definition "Chiropractor" ;
+  fhir:display "Chiropractor" ;
+  fhir:property nhsdd:r-1-0-0-34-3 ;
+  fhir:property nhsdd:r-1-0-0-34-4 ;
+  fhir:property nhsdd:r-1-0-0-34-5 ;
+  fhir:property nhsdd:r-1-0-0-34-6 ;
+  composite:index 34 ;
+  rdfs:label "Chiropractor" ;
+.
+nhsdd:CSC_50721644-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "390"^^xsd:token ;
+  fhir:definition "Social Worker in England" ;
+  fhir:display "Social Worker in England" ;
+  fhir:property nhsdd:r-1-0-0-69-3 ;
+  fhir:property nhsdd:r-1-0-0-69-4 ;
+  fhir:property nhsdd:r-1-0-0-69-5 ;
+  fhir:property nhsdd:r-1-0-0-69-6 ;
+  composite:index 69 ;
+  rdfs:label "Social Worker in England" ;
+.
+nhsdd:CSC_50721645-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "350"^^xsd:token ;
+  fhir:definition "Specialist Community Public Health Nurse: School Nurse" ;
+  fhir:display "Specialist Community Public Health Nurse: School Nurse" ;
+  fhir:property nhsdd:r-1-0-0-65-3 ;
+  fhir:property nhsdd:r-1-0-0-65-4 ;
+  fhir:property nhsdd:r-1-0-0-65-5 ;
+  fhir:property nhsdd:r-1-0-0-65-6 ;
+  composite:index 65 ;
+  rdfs:label "Specialist Community Public Health Nurse: School Nurse" ;
+.
+nhsdd:CSC_50721646-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "380"^^xsd:token ;
+  fhir:definition "Pharmacy Technician" ;
+  fhir:display "Pharmacy Technician" ;
+  fhir:property nhsdd:r-1-0-0-68-3 ;
+  fhir:property nhsdd:r-1-0-0-68-4 ;
+  fhir:property nhsdd:r-1-0-0-68-5 ;
+  fhir:property nhsdd:r-1-0-0-68-6 ;
+  composite:index 68 ;
+  rdfs:label "Pharmacy Technician" ;
+.
+nhsdd:CSC_50721647-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "S"^^xsd:token ;
+  fhir:definition "Staging (Retired 1 April 2018)" ;
+  fhir:display "Staging (Retired 1 April 2018)" ;
+  fhir:property nhsdd:r-3-0-0-35-3 ;
+  fhir:property nhsdd:r-3-0-0-35-4 ;
+  fhir:property nhsdd:r-3-0-0-35-5 ;
+  fhir:property nhsdd:r-3-0-0-35-6 ;
+  fhir:property nhsdd:r-3-0-0-35-7 ;
+  fhir:property nhsdd:r-3-0-0-35-8 ;
+  composite:index 35 ;
+  rdfs:label "Staging (Retired 1 April 2018)" ;
+.
+nhsdd:CSC_50721648-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "340"^^xsd:token ;
+  fhir:definition "Specialist Community Public Health Nurse: Occupational Health Nurse" ;
+  fhir:display "Specialist Community Public Health Nurse: Occupational Health Nurse" ;
+  fhir:property nhsdd:r-1-0-0-64-3 ;
+  fhir:property nhsdd:r-1-0-0-64-4 ;
+  fhir:property nhsdd:r-1-0-0-64-5 ;
+  fhir:property nhsdd:r-1-0-0-64-6 ;
+  composite:index 64 ;
+  rdfs:label "Specialist Community Public Health Nurse: Occupational Health Nurse" ;
+.
+nhsdd:CSC_50721649-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "320"^^xsd:token ;
+  fhir:definition "Specialist Community Public Health Nurse: Family Health Nurse" ;
+  fhir:display "Specialist Community Public Health Nurse: Family Health Nurse" ;
+  fhir:property nhsdd:r-1-0-0-62-3 ;
+  fhir:property nhsdd:r-1-0-0-62-4 ;
+  fhir:property nhsdd:r-1-0-0-62-5 ;
+  fhir:property nhsdd:r-1-0-0-62-6 ;
+  composite:index 62 ;
+  rdfs:label "Specialist Community Public Health Nurse: Family Health Nurse" ;
+.
+nhsdd:CSC_5072164a-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "XXX"^^xsd:token ;
+  fhir:definition "Other (not listed)" ;
+  fhir:display "Other (not listed)" ;
+  fhir:property nhsdd:r-1-0-0-30-3 ;
+  fhir:property nhsdd:r-1-0-0-30-4 ;
+  fhir:property nhsdd:r-1-0-0-30-5 ;
+  fhir:property nhsdd:r-1-0-0-30-6 ;
+  fhir:property nhsdd:r-1-0-0-30-7 ;
+  composite:index 30 ;
+  rdfs:label "Other (not listed)" ;
+.
+nhsdd:CSC_5072164b-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "170"^^xsd:token ;
+  fhir:definition "MIDWIFE" ;
+  fhir:display "MIDWIFE" ;
+  fhir:property nhsdd:r-1-0-0-47-3 ;
+  fhir:property nhsdd:r-1-0-0-47-4 ;
+  fhir:property nhsdd:r-1-0-0-47-5 ;
+  fhir:property nhsdd:r-1-0-0-47-6 ;
+  composite:index 47 ;
+  rdfs:label "MIDWIFE" ;
+.
+nhsdd:CSC_5072164c-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "190"^^xsd:token ;
+  fhir:definition "Occupational Therapist" ;
+  fhir:display "Occupational Therapist" ;
+  fhir:property nhsdd:r-1-0-0-49-3 ;
+  fhir:property nhsdd:r-1-0-0-49-4 ;
+  fhir:property nhsdd:r-1-0-0-49-5 ;
+  fhir:property nhsdd:r-1-0-0-49-6 ;
+  composite:index 49 ;
+  rdfs:label "Occupational Therapist" ;
+.
+nhsdd:CSC_5072164d-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "130"^^xsd:token ;
+  fhir:definition "Dietitian" ;
+  fhir:display "Dietitian" ;
+  fhir:property nhsdd:r-1-0-0-43-3 ;
+  fhir:property nhsdd:r-1-0-0-43-4 ;
+  fhir:property nhsdd:r-1-0-0-43-5 ;
+  fhir:property nhsdd:r-1-0-0-43-6 ;
+  composite:index 43 ;
+  rdfs:label "Dietitian" ;
+.
+nhsdd:CSC_5072164e-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "160"^^xsd:token ;
+  fhir:definition "GENERAL MEDICAL PRACTITIONER" ;
+  fhir:display "GENERAL MEDICAL PRACTITIONER" ;
+  fhir:property nhsdd:r-1-0-0-46-3 ;
+  fhir:property nhsdd:r-1-0-0-46-4 ;
+  fhir:property nhsdd:r-1-0-0-46-5 ;
+  fhir:property nhsdd:r-1-0-0-46-6 ;
+  fhir:property nhsdd:r-1-0-0-46-7 ;
+  composite:index 46 ;
+  rdfs:label "GENERAL MEDICAL PRACTITIONER" ;
+.
+nhsdd:CSC_5072164f-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "100"^^xsd:token ;
+  fhir:definition "Dental Technician" ;
+  fhir:display "Dental Technician" ;
+  fhir:property nhsdd:r-1-0-0-40-3 ;
+  fhir:property nhsdd:r-1-0-0-40-4 ;
+  fhir:property nhsdd:r-1-0-0-40-5 ;
+  fhir:property nhsdd:r-1-0-0-40-6 ;
+  composite:index 40 ;
+  rdfs:label "Dental Technician" ;
+.
+nhsdd:CSC_50721650-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "120"^^xsd:token ;
+  fhir:definition "Orthodontic Therapist" ;
+  fhir:display "Orthodontic Therapist" ;
+  fhir:property nhsdd:r-1-0-0-42-3 ;
+  fhir:property nhsdd:r-1-0-0-42-4 ;
+  fhir:property nhsdd:r-1-0-0-42-5 ;
+  fhir:property nhsdd:r-1-0-0-42-6 ;
+  composite:index 42 ;
+  rdfs:label "Orthodontic Therapist" ;
+.
+nhsdd:CSC_50721651-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "04"^^xsd:token ;
+  fhir:definition "Diagnostic (specific to surgery)" ;
+  fhir:display "Diagnostic (specific to surgery)" ;
+  fhir:property nhsdd:r-3-0-0-39-3 ;
+  fhir:property nhsdd:r-3-0-0-39-4 ;
+  fhir:property nhsdd:r-3-0-0-39-5 ;
+  fhir:property nhsdd:r-3-0-0-39-6 ;
+  fhir:property nhsdd:r-3-0-0-39-7 ;
+  composite:index 39 ;
+  rdfs:label "Diagnostic (specific to surgery)" ;
+.
+nhsdd:CSC_50721652-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "260"^^xsd:token ;
+  fhir:definition "Paramedic" ;
+  fhir:display "Paramedic" ;
+  fhir:property nhsdd:r-1-0-0-56-3 ;
+  fhir:property nhsdd:r-1-0-0-56-4 ;
+  fhir:property nhsdd:r-1-0-0-56-5 ;
+  fhir:property nhsdd:r-1-0-0-56-6 ;
+  composite:index 56 ;
+  rdfs:label "Paramedic" ;
+.
+nhsdd:CSC_50721653-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "220"^^xsd:token ;
+  fhir:definition "OPTOMETRIST" ;
+  fhir:display "OPTOMETRIST" ;
+  fhir:property nhsdd:r-1-0-0-52-3 ;
+  fhir:property nhsdd:r-1-0-0-52-4 ;
+  fhir:property nhsdd:r-1-0-0-52-5 ;
+  fhir:property nhsdd:r-1-0-0-52-6 ;
+  fhir:property nhsdd:r-1-0-0-52-7 ;
+  composite:index 52 ;
+  rdfs:label "OPTOMETRIST" ;
+.
+nhsdd:CSC_50721654-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "96"^^xsd:token ;
+  fhir:definition "Other (not listed)" ;
+  fhir:display "Other (not listed)" ;
+  fhir:property nhsdd:r-4-0-0-36-3 ;
+  fhir:property nhsdd:r-4-0-0-36-4 ;
+  fhir:property nhsdd:r-4-0-0-36-5 ;
+  fhir:property nhsdd:r-4-0-0-36-6 ;
+  fhir:property nhsdd:r-4-0-0-36-7 ;
+  composite:index 36 ;
+  rdfs:label "Other (not listed)" ;
+.
+nhsdd:CSC_50721655-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "060"^^xsd:token ;
+  fhir:definition "CONSULTANT" ;
+  fhir:display "CONSULTANT" ;
+  fhir:property nhsdd:r-1-0-0-36-3 ;
+  fhir:property nhsdd:r-1-0-0-36-4 ;
+  fhir:property nhsdd:r-1-0-0-36-5 ;
+  fhir:property nhsdd:r-1-0-0-36-6 ;
+  fhir:property nhsdd:r-1-0-0-36-7 ;
+  composite:index 36 ;
+  rdfs:label "CONSULTANT" ;
+.
+nhsdd:CSC_50721656-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "080"^^xsd:token ;
+  fhir:definition "Dental Hygienist" ;
+  fhir:display "Dental Hygienist" ;
+  fhir:property nhsdd:r-1-0-0-38-3 ;
+  fhir:property nhsdd:r-1-0-0-38-4 ;
+  fhir:property nhsdd:r-1-0-0-38-5 ;
+  fhir:property nhsdd:r-1-0-0-38-6 ;
+  composite:index 38 ;
+  rdfs:label "Dental Hygienist" ;
+.
+nhsdd:CSC_50721657-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "020"^^xsd:token ;
+  fhir:definition "Biomedical Scientist" ;
+  fhir:display "Biomedical Scientist" ;
+  fhir:property nhsdd:r-1-0-0-32-3 ;
+  fhir:property nhsdd:r-1-0-0-32-4 ;
+  fhir:property nhsdd:r-1-0-0-32-5 ;
+  fhir:property nhsdd:r-1-0-0-32-6 ;
+  composite:index 32 ;
+  rdfs:label "Biomedical Scientist" ;
+.
+nhsdd:CSC_50721658-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "050"^^xsd:token ;
+  fhir:definition "Clinical Scientist" ;
+  fhir:display "Clinical Scientist" ;
+  fhir:property nhsdd:r-1-0-0-35-3 ;
+  fhir:property nhsdd:r-1-0-0-35-4 ;
+  fhir:property nhsdd:r-1-0-0-35-5 ;
+  fhir:property nhsdd:r-1-0-0-35-6 ;
+  composite:index 35 ;
+  rdfs:label "Clinical Scientist" ;
+.
+nhsdd:CSC_50721659-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "200"^^xsd:token ;
+  fhir:definition "Operating Department Practitioner" ;
+  fhir:display "Operating Department Practitioner" ;
+  fhir:property nhsdd:r-1-0-0-50-3 ;
+  fhir:property nhsdd:r-1-0-0-50-4 ;
+  fhir:property nhsdd:r-1-0-0-50-5 ;
+  fhir:property nhsdd:r-1-0-0-50-6 ;
+  composite:index 50 ;
+  rdfs:label "Operating Department Practitioner" ;
+.
+nhsdd:CSC_5072165a-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "010"^^xsd:token ;
+  fhir:definition "Arts Therapist (Art, Music and Drama Therapists)" ;
+  fhir:display "Arts Therapist (Art, Music and Drama Therapists)" ;
+  fhir:property nhsdd:r-1-0-0-31-3 ;
+  fhir:property nhsdd:r-1-0-0-31-4 ;
+  fhir:property nhsdd:r-1-0-0-31-5 ;
+  fhir:property nhsdd:r-1-0-0-31-6 ;
+  composite:index 31 ;
+  rdfs:label "Arts Therapist (Art, Music and Drama Therapists)" ;
+.
+nhsdd:CSC_5072165b-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "01"^^xsd:token ;
+  fhir:definition "Curative" ;
+  fhir:display "Curative" ;
+  fhir:property nhsdd:r-3-0-0-36-3 ;
+  fhir:property nhsdd:r-3-0-0-36-4 ;
+  fhir:property nhsdd:r-3-0-0-36-5 ;
+  fhir:property nhsdd:r-3-0-0-36-6 ;
+  fhir:property nhsdd:r-3-0-0-36-7 ;
+  composite:index 36 ;
+  rdfs:label "Curative" ;
+.
+nhsdd:CSC_5072165c-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "D"^^xsd:token ;
+  fhir:definition "Diagnostic (Retired 1 April 2018)" ;
+  fhir:display "Diagnostic (Retired 1 April 2018)" ;
+  fhir:property nhsdd:r-3-0-0-32-3 ;
+  fhir:property nhsdd:r-3-0-0-32-4 ;
+  fhir:property nhsdd:r-3-0-0-32-5 ;
+  fhir:property nhsdd:r-3-0-0-32-6 ;
+  fhir:property nhsdd:r-3-0-0-32-7 ;
+  fhir:property nhsdd:r-3-0-0-32-8 ;
+  composite:index 32 ;
+  rdfs:label "Diagnostic (Retired 1 April 2018)" ;
+.
+nhsdd:CSC_5072165d-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "360"^^xsd:token ;
+  fhir:definition "Speech and Language Therapist" ;
+  fhir:display "Speech and Language Therapist" ;
+  fhir:property nhsdd:r-1-0-0-66-3 ;
+  fhir:property nhsdd:r-1-0-0-66-4 ;
+  fhir:property nhsdd:r-1-0-0-66-5 ;
+  fhir:property nhsdd:r-1-0-0-66-6 ;
+  composite:index 66 ;
+  rdfs:label "Speech and Language Therapist" ;
+.
+nhsdd:CSC_5072165e-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "A"^^xsd:token ;
+  fhir:definition "Adjuvant (Retired 1 January 2013)" ;
+  fhir:display "Adjuvant (Retired 1 January 2013)" ;
+  fhir:property nhsdd:r-3-0-0-30-3 ;
+  fhir:property nhsdd:r-3-0-0-30-4 ;
+  fhir:property nhsdd:r-3-0-0-30-5 ;
+  fhir:property nhsdd:r-3-0-0-30-6 ;
+  fhir:property nhsdd:r-3-0-0-30-7 ;
+  fhir:property nhsdd:r-3-0-0-30-8 ;
+  composite:index 30 ;
+  rdfs:label "Adjuvant (Retired 1 January 2013)" ;
+.
+nhsdd:CSC_5072165f-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "09"^^xsd:token ;
+  fhir:definition "Not known (Not Recorded)" ;
+  fhir:display "Not known (Not Recorded)" ;
+  fhir:property nhsdd:r-3-0-0-43-3 ;
+  fhir:property nhsdd:r-3-0-0-43-4 ;
+  fhir:property nhsdd:r-3-0-0-43-5 ;
+  fhir:property nhsdd:r-3-0-0-43-6 ;
+  composite:index 43 ;
+  rdfs:label "Not known (Not Recorded)" ;
+.
+nhsdd:CSC_50721660-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "180"^^xsd:token ;
+  fhir:definition "NURSE" ;
+  fhir:display "NURSE" ;
+  fhir:property nhsdd:r-1-0-0-48-3 ;
+  fhir:property nhsdd:r-1-0-0-48-4 ;
+  fhir:property nhsdd:r-1-0-0-48-5 ;
+  fhir:property nhsdd:r-1-0-0-48-6 ;
+  fhir:property nhsdd:r-1-0-0-48-7 ;
+  composite:index 48 ;
+  rdfs:label "NURSE" ;
+.
+nhsdd:CSC_50721661-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "140"^^xsd:token ;
+  fhir:definition "Dispensing Optician" ;
+  fhir:display "Dispensing Optician" ;
+  fhir:property nhsdd:r-1-0-0-44-3 ;
+  fhir:property nhsdd:r-1-0-0-44-4 ;
+  fhir:property nhsdd:r-1-0-0-44-5 ;
+  fhir:property nhsdd:r-1-0-0-44-6 ;
+  composite:index 44 ;
+  rdfs:label "Dispensing Optician" ;
+.
+nhsdd:CSC_50721662-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "06"^^xsd:token ;
+  fhir:definition "Uncertain of treatment intent" ;
+  fhir:display "Uncertain of treatment intent" ;
+  fhir:property nhsdd:r-3-0-0-41-3 ;
+  fhir:property nhsdd:r-3-0-0-41-4 ;
+  fhir:property nhsdd:r-3-0-0-41-5 ;
+  fhir:property nhsdd:r-3-0-0-41-6 ;
+  fhir:property nhsdd:r-3-0-0-41-7 ;
+  composite:index 41 ;
+  rdfs:label "Uncertain of treatment intent" ;
+.
+nhsdd:CSC_50721663-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "05"^^xsd:token ;
+  fhir:definition "Staging (specific to surgery)" ;
+  fhir:display "Staging (specific to surgery)" ;
+  fhir:property nhsdd:r-3-0-0-40-3 ;
+  fhir:property nhsdd:r-3-0-0-40-4 ;
+  fhir:property nhsdd:r-3-0-0-40-5 ;
+  fhir:property nhsdd:r-3-0-0-40-6 ;
+  fhir:property nhsdd:r-3-0-0-40-7 ;
+  composite:index 40 ;
+  rdfs:label "Staging (specific to surgery)" ;
+.
+nhsdd:CSC_50721664-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "98"^^xsd:token ;
+  fhir:definition "Onward Referral Reason Not Applicable" ;
+  fhir:display "Onward Referral Reason Not Applicable" ;
+  fhir:property nhsdd:r-4-0-0-37-3 ;
+  fhir:property nhsdd:r-4-0-0-37-4 ;
+  fhir:property nhsdd:r-4-0-0-37-5 ;
+  fhir:property nhsdd:r-4-0-0-37-6 ;
+  composite:index 37 ;
+  rdfs:label "Onward Referral Reason Not Applicable" ;
+.
+nhsdd:CSC_50721665-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "02"^^xsd:token ;
+  fhir:definition "For Opinion Only" ;
+  fhir:display "For Opinion Only" ;
+  fhir:property nhsdd:r-4-0-0-31-3 ;
+  fhir:property nhsdd:r-4-0-0-31-4 ;
+  fhir:property nhsdd:r-4-0-0-31-5 ;
+  fhir:property nhsdd:r-4-0-0-31-6 ;
+  fhir:property nhsdd:r-4-0-0-31-7 ;
+  composite:index 31 ;
+  rdfs:label "For Opinion Only" ;
+.
+nhsdd:CSC_50721666-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "04"^^xsd:token ;
+  fhir:definition "New Referral (Non Transfer)" ;
+  fhir:display "New Referral (Non Transfer)" ;
+  fhir:property nhsdd:r-4-0-0-33-3 ;
+  fhir:property nhsdd:r-4-0-0-33-4 ;
+  fhir:property nhsdd:r-4-0-0-33-5 ;
+  fhir:property nhsdd:r-4-0-0-33-6 ;
+  fhir:property nhsdd:r-4-0-0-33-7 ;
+  composite:index 33 ;
+  rdfs:label "New Referral (Non Transfer)" ;
+.
+nhsdd:CSC_50721667-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "280"^^xsd:token ;
+  fhir:definition "Physiotherapist" ;
+  fhir:display "Physiotherapist" ;
+  fhir:property nhsdd:r-1-0-0-58-3 ;
+  fhir:property nhsdd:r-1-0-0-58-4 ;
+  fhir:property nhsdd:r-1-0-0-58-5 ;
+  fhir:property nhsdd:r-1-0-0-58-6 ;
+  composite:index 58 ;
+  rdfs:label "Physiotherapist" ;
+.
+nhsdd:CSC_50721668-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "240"^^xsd:token ;
+  fhir:definition "Orthotist" ;
+  fhir:display "Orthotist" ;
+  fhir:property nhsdd:r-1-0-0-54-3 ;
+  fhir:property nhsdd:r-1-0-0-54-4 ;
+  fhir:property nhsdd:r-1-0-0-54-5 ;
+  fhir:property nhsdd:r-1-0-0-54-6 ;
+  composite:index 54 ;
+  rdfs:label "Orthotist" ;
+.
+nhsdd:CSC_50721669-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "270"^^xsd:token ;
+  fhir:definition "Pharmacist" ;
+  fhir:display "Pharmacist" ;
+  fhir:property nhsdd:r-1-0-0-57-3 ;
+  fhir:property nhsdd:r-1-0-0-57-4 ;
+  fhir:property nhsdd:r-1-0-0-57-5 ;
+  fhir:property nhsdd:r-1-0-0-57-6 ;
+  composite:index 57 ;
+  rdfs:label "Pharmacist" ;
+.
+nhsdd:CSC_5072166a-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "210"^^xsd:token ;
+  fhir:definition "OPHTHALMIC MEDICAL PRACTITIONER" ;
+  fhir:display "OPHTHALMIC MEDICAL PRACTITIONER" ;
+  fhir:property nhsdd:r-1-0-0-51-3 ;
+  fhir:property nhsdd:r-1-0-0-51-4 ;
+  fhir:property nhsdd:r-1-0-0-51-5 ;
+  fhir:property nhsdd:r-1-0-0-51-6 ;
+  fhir:property nhsdd:r-1-0-0-51-7 ;
+  composite:index 51 ;
+  rdfs:label "OPHTHALMIC MEDICAL PRACTITIONER" ;
+.
+nhsdd:CSC_5072166b-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "230"^^xsd:token ;
+  fhir:definition "Orthoptist" ;
+  fhir:display "Orthoptist" ;
+  fhir:property nhsdd:r-1-0-0-53-3 ;
+  fhir:property nhsdd:r-1-0-0-53-4 ;
+  fhir:property nhsdd:r-1-0-0-53-5 ;
+  fhir:property nhsdd:r-1-0-0-53-6 ;
+  composite:index 53 ;
+  rdfs:label "Orthoptist" ;
+.
+nhsdd:CSC_5072166c-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "070"^^xsd:token ;
+  fhir:definition "Clinical Dental Technician" ;
+  fhir:display "Clinical Dental Technician" ;
+  fhir:property nhsdd:r-1-0-0-37-3 ;
+  fhir:property nhsdd:r-1-0-0-37-4 ;
+  fhir:property nhsdd:r-1-0-0-37-5 ;
+  fhir:property nhsdd:r-1-0-0-37-6 ;
+  composite:index 37 ;
+  rdfs:label "Clinical Dental Technician" ;
+.
+nhsdd:CSC_5072166d-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "400"^^xsd:token ;
+  fhir:definition "Improving Access to Psychological Therapies Care Professional" ;
+  fhir:display "Improving Access to Psychological Therapies Care Professional" ;
+  fhir:property nhsdd:r-1-0-0-70-3 ;
+  fhir:property nhsdd:r-1-0-0-70-4 ;
+  fhir:property nhsdd:r-1-0-0-70-5 ;
+  fhir:property nhsdd:r-1-0-0-70-6 ;
+  composite:index 70 ;
+  rdfs:label "Improving Access to Psychological Therapies Care Professional" ;
+.
+nhsdd:CSC_5072166e-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "030"^^xsd:token ;
+  fhir:definition "Chiropodist / Podiatrist" ;
+  fhir:display "Chiropodist / Podiatrist" ;
+  fhir:property nhsdd:r-1-0-0-33-3 ;
+  fhir:property nhsdd:r-1-0-0-33-4 ;
+  fhir:property nhsdd:r-1-0-0-33-5 ;
+  fhir:property nhsdd:r-1-0-0-33-6 ;
+  composite:index 33 ;
+  rdfs:label "Chiropodist / Podiatrist" ;
+.
+nhsdd:CSC_5072166f-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "370"^^xsd:token ;
+  fhir:definition "Hearing Aid Dispenser" ;
+  fhir:display "Hearing Aid Dispenser" ;
+  fhir:property nhsdd:r-1-0-0-67-3 ;
+  fhir:property nhsdd:r-1-0-0-67-4 ;
+  fhir:property nhsdd:r-1-0-0-67-5 ;
+  fhir:property nhsdd:r-1-0-0-67-6 ;
+  composite:index 67 ;
+  rdfs:label "Hearing Aid Dispenser" ;
+.
+nhsdd:CSC_50721670-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Concept> ;
+  fhir:code "330"^^xsd:token ;
+  fhir:definition "Specialist Community Public Health Nurse: Health Visitor" ;
+  fhir:display "Specialist Community Public Health Nurse: Health Visitor" ;
+  fhir:property nhsdd:r-1-0-0-63-3 ;
+  fhir:property nhsdd:r-1-0-0-63-4 ;
+  fhir:property nhsdd:r-1-0-0-63-5 ;
+  fhir:property nhsdd:r-1-0-0-63-6 ;
+  composite:index 63 ;
+  rdfs:label "Specialist Community Public Health Nurse: Health Visitor" ;
+.
+nhsdd:CSF_5134fd21-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:description "Filter to identify which Data Attribute a concept relates to" ;
+  fhir:operator nhsdd:r-1-0-0-20-2 ;
+  fhir:operator nhsdd:r-1-0-0-20-3 ;
+  fhir:operator nhsdd:r-1-0-0-20-4 ;
+  fhir:operator nhsdd:r-1-0-0-20-5 ;
+  fhir:value "Data Attribute" ;
+  composite:index 20 ;
+.
+nhsdd:CSF_5134fd22-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:description "Filter to identify which Data Attribute a concept relates to" ;
+  fhir:operator nhsdd:r-3-0-0-20-2 ;
+  fhir:operator nhsdd:r-3-0-0-20-3 ;
+  fhir:operator nhsdd:r-3-0-0-20-4 ;
+  fhir:operator nhsdd:r-3-0-0-20-5 ;
+  fhir:value "Data Attribute" ;
+  composite:index 20 ;
+.
+nhsdd:CSF_5134fd23-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:description "Filter to enable filtering by Publish date/s" ;
+  fhir:operator nhsdd:r-1-0-0-21-2 ;
+  fhir:operator nhsdd:r-1-0-0-21-3 ;
+  fhir:operator nhsdd:r-1-0-0-21-4 ;
+  fhir:operator nhsdd:r-1-0-0-21-5 ;
+  fhir:value "Publish Date" ;
+  composite:index 21 ;
+.
+nhsdd:CSF_5134fd24-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:description "Filter to identify which Data Elements a concept relates to" ;
+  fhir:operator nhsdd:r-3-0-0-19-2 ;
+  fhir:operator nhsdd:r-3-0-0-19-3 ;
+  fhir:operator nhsdd:r-3-0-0-19-4 ;
+  fhir:operator nhsdd:r-3-0-0-19-5 ;
+  fhir:value "Data Element" ;
+  composite:index 19 ;
+.
+nhsdd:CSF_5134fd25-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:description "Filter to identify status of a concept" ;
+  fhir:operator nhsdd:r-4-0-0-23-2 ;
+  fhir:value "Status" ;
+  composite:index 23 ;
+.
+nhsdd:CSF_5134fd26-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:description "Filter to identify which Data Attribute a concept relates to" ;
+  fhir:operator nhsdd:r-4-0-0-20-2 ;
+  fhir:operator nhsdd:r-4-0-0-20-3 ;
+  fhir:operator nhsdd:r-4-0-0-20-4 ;
+  fhir:operator nhsdd:r-4-0-0-20-5 ;
+  fhir:value "Data Attribute" ;
+  composite:index 20 ;
+.
+nhsdd:CSF_5134fd27-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:description "Filter to enable filtering by date of retirement" ;
+  fhir:operator nhsdd:r-3-0-0-22-2 ;
+  fhir:operator nhsdd:r-3-0-0-22-3 ;
+  fhir:operator nhsdd:r-3-0-0-22-4 ;
+  fhir:operator nhsdd:r-3-0-0-22-5 ;
+  fhir:value "Retired Date" ;
+  composite:index 22 ;
+.
+nhsdd:CSF_5134fd28-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:description "Filter to identify status of a concept" ;
+  fhir:operator nhsdd:r-3-0-0-23-2 ;
+  fhir:value "Status" ;
+  composite:index 23 ;
+.
+nhsdd:CSF_5134fd29-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:description "Filter to identify which Data Elements a concept relates to" ;
+  fhir:operator nhsdd:r-4-0-0-19-2 ;
+  fhir:operator nhsdd:r-4-0-0-19-3 ;
+  fhir:operator nhsdd:r-4-0-0-19-4 ;
+  fhir:operator nhsdd:r-4-0-0-19-5 ;
+  fhir:value "Data Element" ;
+  composite:index 19 ;
+.
+nhsdd:CSF_5134fd2a-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:description "Filter to identify status of a concept" ;
+  fhir:operator nhsdd:r-1-0-0-23-2 ;
+  fhir:value "Status" ;
+  composite:index 23 ;
+.
+nhsdd:CSF_5134fd2b-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:description "Filter to enable filtering by date of retirement" ;
+  fhir:operator nhsdd:r-4-0-0-22-2 ;
+  fhir:operator nhsdd:r-4-0-0-22-3 ;
+  fhir:operator nhsdd:r-4-0-0-22-4 ;
+  fhir:operator nhsdd:r-4-0-0-22-5 ;
+  fhir:value "Retired Date" ;
+  composite:index 22 ;
+.
+nhsdd:CSF_5134fd2c-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:description "Filter to enable filtering by Publish date/s" ;
+  fhir:operator nhsdd:r-3-0-0-21-2 ;
+  fhir:operator nhsdd:r-3-0-0-21-3 ;
+  fhir:operator nhsdd:r-3-0-0-21-4 ;
+  fhir:operator nhsdd:r-3-0-0-21-5 ;
+  fhir:value "Publish Date" ;
+  composite:index 21 ;
+.
+nhsdd:CSF_5134fd2d-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:description "Filter to identify which Data Elements a concept relates to" ;
+  fhir:operator nhsdd:r-1-0-0-19-2 ;
+  fhir:operator nhsdd:r-1-0-0-19-3 ;
+  fhir:operator nhsdd:r-1-0-0-19-4 ;
+  fhir:operator nhsdd:r-1-0-0-19-5 ;
+  fhir:value "Data Element" ;
+  composite:index 19 ;
+.
+nhsdd:CSF_5134fd2e-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:description "Filter to enable filtering by date of retirement" ;
+  fhir:operator nhsdd:r-1-0-0-22-2 ;
+  fhir:operator nhsdd:r-1-0-0-22-3 ;
+  fhir:operator nhsdd:r-1-0-0-22-4 ;
+  fhir:operator nhsdd:r-1-0-0-22-5 ;
+  fhir:value "Retired Date" ;
+  composite:index 22 ;
+.
+nhsdd:CSF_5134fd2f-2c44-11b2-8065-e65c55b38995
+  a <http://hl7.org/fhir#CodeSystem.Filter> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:description "Filter to enable filtering by Publish date/s" ;
+  fhir:operator nhsdd:r-4-0-0-21-2 ;
+  fhir:operator nhsdd:r-4-0-0-21-3 ;
+  fhir:operator nhsdd:r-4-0-0-21-4 ;
+  fhir:operator nhsdd:r-4-0-0-21-5 ;
+  fhir:value "Publish Date" ;
+  composite:index 21 ;
+.
+nhsdd:CSP1_Publish_Date
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:CS_CANCER_TREATMENT_INTENT
+  a fhir:CodeSystem ;
+  fhir:caseSensitive false ;
+  fhir:compositional false ;
+  fhir:concept nhsdd:CSC_50721630-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721631-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721634-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721635-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721636-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072163b-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072163d-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721647-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721651-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072165b-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072165c-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072165e-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072165f-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721662-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721663-2c44-11b2-8065-e65c55b38995 ;
+  fhir:contact nhsdd:r-3-0-0-10 ;
+  fhir:content nhsdd:r-3-0-0-17 ;
+  fhir:copyright "Copyright © NHS Digital" ;
+  fhir:count "15"^^xsd:nonNegativeInteger ;
+  fhir:date "2020-03-27T07:21:43+00:00"^^xsd:anySimpleType ;
+  fhir:description "This code system represents a union of any National, Permitted and Default Codes from the NHS Data Dictionary attribute CANCER_TREATMENT_INTENT, http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/cancer_treatment_intent_de.asp and its linked data elements as of 27th of March 2020. Note that this code system may contain active and retired concepts." ;
+  fhir:experimental false ;
+  fhir:filter nhsdd:CSF_5134fd22-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd24-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd27-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd28-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd2c-2c44-11b2-8065-e65c55b38995 ;
+  fhir:hierarchyMeaning nhsdd:r-3-0-0-14 ;
+  fhir:identifier nhsdd:r-3-0-0-2 ;
+  fhir:language "en-GB"^^xsd:token ;
+  fhir:name "CANCER_TREATMENT_INTENT" ;
+  fhir:property nhsdd:r-3-0-0-24 ;
+  fhir:property nhsdd:r-3-0-0-25 ;
+  fhir:property nhsdd:r-3-0-0-26 ;
+  fhir:property nhsdd:r-3-0-0-27 ;
+  fhir:property nhsdd:r-3-0-0-28 ;
+  fhir:property nhsdd:r-3-0-0-29 ;
+  fhir:publisher "NHS Digital" ;
+  fhir:status nhsdd:r-3-0-0-6 ;
+  fhir:title "Cancer Treatment Intent" ;
+  fhir:url "https://www.datadictionary.nhs.uk/code_system/union/cancer_treatment_intent"^^xsd:anyURI ;
+  fhir:version "3.2.0" ;
+  fhir:versionNeeded false ;
+  nhsdd:schemaLocation-CodeSystem "http://hl7.org/fhir/fhir-single.xsd" ;
+  nhsdd:xsi-CodeSystem "http://www.w3.org/2001/XMLSchema-instance" ;
+  composite:index 0 ;
+.
+nhsdd:CS_CARE_PROFESSIONAL_TYPE
+  a fhir:CodeSystem ;
+  fhir:caseSensitive false ;
+  fhir:compositional false ;
+  fhir:concept nhsdd:CSC_50721632-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721637-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721638-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721639-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072163a-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072163e-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072163f-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721643-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721644-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721645-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721646-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721648-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721649-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072164a-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072164b-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072164c-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072164d-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072164e-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072164f-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721650-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721652-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721653-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721655-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721656-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721657-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721658-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721659-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072165a-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072165d-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721660-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721661-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721667-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721668-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721669-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072166a-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072166b-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072166c-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072166d-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072166e-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072166f-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721670-2c44-11b2-8065-e65c55b38995 ;
+  fhir:contact nhsdd:CD_1001 ;
+  fhir:content nhsdd:r-1-0-0-17 ;
+  fhir:copyright "Copyright © NHS Digital" ;
+  fhir:count "41"^^xsd:nonNegativeInteger ;
+  fhir:date "2020-03-27T07:21:43+00:00"^^xsd:anySimpleType ;
+  fhir:description "This code system represents a union of any National, Permitted and Default Codes from the NHS Data Dictionary attribute CARE_PROFESSIONAL_TYPE, http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/card/care_professional_type_de.asp and its linked data elements as of 27th of March 2020. Note that this code system may contain active and retired concepts." ;
+  fhir:experimental false ;
+  fhir:filter nhsdd:CSF_5134fd21-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd23-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd2a-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd2d-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd2e-2c44-11b2-8065-e65c55b38995 ;
+  fhir:hierarchyMeaning nhsdd:r-1-0-0-14 ;
+  fhir:identifier nhsdd:r-1-0-0-2 ;
+  fhir:language "en-GB"^^xsd:token ;
+  fhir:name "CARE_PROFESSIONAL_TYPE" ;
+  fhir:property nhsdd:r-1-0-0-24 ;
+  fhir:property nhsdd:r-1-0-0-25 ;
+  fhir:property nhsdd:r-1-0-0-26 ;
+  fhir:property nhsdd:r-1-0-0-27 ;
+  fhir:property nhsdd:r-1-0-0-28 ;
+  fhir:property nhsdd:r-1-0-0-29 ;
+  fhir:publisher "NHS Digital" ;
+  fhir:status nhsdd:r-1-0-0-6 ;
+  fhir:title "Care Professional Type" ;
+  fhir:url "https://www.datadictionary.nhs.uk/code_system/union/care_professional_type"^^xsd:anyURI ;
+  fhir:version "1.1.0" ;
+  fhir:versionNeeded false ;
+  nhsdd:schemaLocation-CodeSystem "http://hl7.org/fhir/fhir-single.xsd" ;
+  nhsdd:xsi-CodeSystem "http://www.w3.org/2001/XMLSchema-instance" ;
+  composite:index 0 ;
+.
+nhsdd:CS_ONWARD_REFERRAL_REASON
+  a fhir:CodeSystem ;
+  fhir:caseSensitive false ;
+  fhir:compositional false ;
+  fhir:concept nhsdd:CSC_50721633-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_5072163c-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721640-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721641-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721642-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721654-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721664-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721665-2c44-11b2-8065-e65c55b38995 ;
+  fhir:concept nhsdd:CSC_50721666-2c44-11b2-8065-e65c55b38995 ;
+  fhir:contact nhsdd:r-4-0-0-10 ;
+  fhir:content nhsdd:r-4-0-0-17 ;
+  fhir:copyright "Copyright © NHS Digital" ;
+  fhir:count "9"^^xsd:nonNegativeInteger ;
+  fhir:date "2020-03-27T07:21:43+00:00"^^xsd:anySimpleType ;
+  fhir:description "This code system represents a union of any National, Permitted and Default Codes from the NHS Data Dictionary attribute ONWARD_REFERRAL_REASON, http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/onward_referral_reason_de.asp and its linked data elements as of 27th of March 2020. Note that this code system may contain active and retired concepts." ;
+  fhir:experimental false ;
+  fhir:filter nhsdd:CSF_5134fd25-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd26-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd29-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd2b-2c44-11b2-8065-e65c55b38995 ;
+  fhir:filter nhsdd:CSF_5134fd2f-2c44-11b2-8065-e65c55b38995 ;
+  fhir:hierarchyMeaning nhsdd:r-4-0-0-14 ;
+  fhir:identifier nhsdd:r-4-0-0-2 ;
+  fhir:language "en-GB"^^xsd:token ;
+  fhir:name "ONWARD_REFERRAL_REASON" ;
+  fhir:property nhsdd:r-4-0-0-24 ;
+  fhir:property nhsdd:r-4-0-0-25 ;
+  fhir:property nhsdd:r-4-0-0-26 ;
+  fhir:property nhsdd:r-4-0-0-27 ;
+  fhir:property nhsdd:r-4-0-0-28 ;
+  fhir:property nhsdd:r-4-0-0-29 ;
+  fhir:publisher "NHS Digital" ;
+  fhir:status nhsdd:r-4-0-0-6 ;
+  fhir:title "Onward Referral Reason" ;
+  fhir:url "https://www.datadictionary.nhs.uk/code_system/union/onward_referral_reason"^^xsd:anyURI ;
+  fhir:version "1.1.0" ;
+  fhir:versionNeeded false ;
+  nhsdd:schemaLocation-CodeSystem "http://hl7.org/fhir/fhir-single.xsd" ;
+  nhsdd:xsi-CodeSystem "http://www.w3.org/2001/XMLSchema-instance" ;
+  composite:index 0 ;
+.
+nhsdd:Document
+  a sxml:Document ;
+  sxml:root nhsdd:March200_NHSDD2 ;
+.
+nhsdd:March200_NHSDD2
+  a fhir:Bundle ;
+  fhir:entry nhsdd:r-1 ;
+  fhir:entry nhsdd:r-2 ;
+  fhir:entry nhsdd:r-3 ;
+  fhir:entry nhsdd:r-4 ;
+  fhir:entry nhsdd:r-5 ;
+  fhir:entry nhsdd:r-6 ;
+  fhir:type nhsdd:r-0 ;
+  nhsdd:schemaLocation-Bundle "http://hl7.org/fhir/fhir-single.xsd" ;
+  nhsdd:xmlns-Bundle "http://hl7.org/fhir" ;
+  sxml:prefix "xsi" ;
+.
+nhsdd:r-0
+  a fhir:BundleType ;
+  fhir:value "batch"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#BundleType-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-1
+  a <http://hl7.org/fhir#Bundle.Entry> ;
+  fhir:resource nhsdd:r-1-0 ;
+  composite:index 1 ;
+.
+nhsdd:r-1-0
+  a fhir:ResourceContainer ;
+  fhir:codeSystem nhsdd:CS_CARE_PROFESSIONAL_TYPE ;
+  composite:index 0 ;
+.
+nhsdd:r-1-0-0-10-1
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-1-0-0-10-1-0 ;
+  fhir:value "information.standards@nhs.net" ;
+  composite:index 1 ;
+.
+nhsdd:r-1-0-0-10-1-0
+  a fhir:ContactPointSystem ;
+  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-1-0-0-10-2
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-1-0-0-10-2-0 ;
+  fhir:value "http://www.datadictionary.nhs.uk/" ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-10-2-0
+  a fhir:ContactPointSystem ;
+  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-1-0-0-14
+  a fhir:CodeSystemHierarchyMeaning ;
+  fhir:value "is-a"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemHierarchyMeaning-list> ;
+  composite:index 14 ;
+.
+nhsdd:r-1-0-0-17
+  a fhir:CodeSystemContentMode ;
+  fhir:value "complete"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemContentMode-list> ;
+  composite:index 17 ;
+.
+nhsdd:r-1-0-0-19-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-19-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-19-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-19-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-2
+  a fhir:Identifier ;
+  fhir:system "http://www.datadictionary.nhs.uk/V3"^^xsd:anyURI ;
+  fhir:value "http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/card/care_professional_type_de.asp" ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-20-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-20-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-20-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-20-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-21-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-21-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-21-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-21-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-22-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-22-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-22-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-22-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-23-2
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-24
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:description "The Data Element that the concept relates to" ;
+  fhir:type nhsdd:r-1-0-0-24-2 ;
+  composite:index 24 ;
+.
+nhsdd:r-1-0-0-24-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-25
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:description "The Data Attribute that the concept relates to" ;
+  fhir:type nhsdd:r-1-0-0-25-2 ;
+  composite:index 25 ;
+.
+nhsdd:r-1-0-0-25-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-26
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:description "The date on which the concept was first published and/or updated" ;
+  fhir:type nhsdd:r-1-0-0-26-2 ;
+  composite:index 26 ;
+.
+nhsdd:r-1-0-0-26-2
+  a fhir:PropertyType ;
+  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-27
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:description "The date from which the concept was published as retired" ;
+  fhir:type nhsdd:r-1-0-0-27-2 ;
+  composite:index 27 ;
+.
+nhsdd:r-1-0-0-27-2
+  a fhir:PropertyType ;
+  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-28
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:description "The status of the concept can be one of: draft | active | retired | unknown " ;
+  fhir:type nhsdd:r-1-0-0-28-2 ;
+  composite:index 28 ;
+.
+nhsdd:r-1-0-0-28-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-29
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:description "The web page display order to cater for logical groupings " ;
+  fhir:type nhsdd:r-1-0-0-29-2 ;
+  composite:index 29 ;
+.
+nhsdd:r-1-0-0-29-2
+  a fhir:PropertyType ;
+  fhir:value "integer"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-1-0-0-30-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-30-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-30-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-30-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-30-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "41"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-1-0-0-31-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-31-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-31-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-31-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "1"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-32-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-32-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-32-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-32-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "2"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-33-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-33-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-33-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-33-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "3"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-34-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-34-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-34-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-34-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "4"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-35-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-35-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-35-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-35-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "5"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-36-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-36-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-36-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-36-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-36-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "6"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-1-0-0-37-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-37-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-37-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-37-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "7"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-38-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-38-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-38-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-38-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "8"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-39-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-39-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-39-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-39-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "9"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-40-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-40-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-40-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-40-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "10"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-41-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-41-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-41-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-41-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "11"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-42-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-42-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-42-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-42-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "12"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-43-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-43-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-43-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-43-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "13"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-44-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-44-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-44-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-44-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "14"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-45-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-45-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-45-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-45-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-45-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "15"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-1-0-0-46-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-46-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-46-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-46-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-46-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "16"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-1-0-0-47-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-47-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-47-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-47-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "17"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-48-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-48-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-48-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-48-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-48-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "18"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-1-0-0-49-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-49-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-49-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-49-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "19"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-50-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-50-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-50-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-50-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "20"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-51-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-51-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-51-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-51-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-51-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "21"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-1-0-0-52-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-52-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-52-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-52-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-52-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "22"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-1-0-0-53-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-53-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-53-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-53-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "23"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-54-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-54-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-54-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-54-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "24"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-55-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-55-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-55-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-55-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "25"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-56-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-56-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-56-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-56-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "26"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-57-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-57-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-57-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-57-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "27"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-58-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-58-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-58-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-58-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "28"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-59-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-59-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-59-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-59-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "29"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-6
+  a fhir:PublicationStatus ;
+  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-60-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-60-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-60-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-60-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "30"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-61-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-61-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-61-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-61-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-61-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "31"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-1-0-0-62-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-62-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-62-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-62-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "32"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-63-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-63-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-63-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-63-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "33"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-64-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-64-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-64-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-64-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "34"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-65-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-65-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-65-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-65-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "35"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-66-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-66-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-66-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-66-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "36"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-67-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-67-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-67-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-67-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "37"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-68-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-68-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-68-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-68-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "38"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-69-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-69-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-69-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-69-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "39"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-1-0-0-70-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-1-0-0-70-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-1-0-0-70-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
+  composite:index 5 ;
+.
+nhsdd:r-1-0-0-70-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "40"^^xsd:int ;
+  composite:index 6 ;
+.
+nhsdd:r-2
+  a <http://hl7.org/fhir#Bundle.Entry> ;
+  composite:index 2 ;
+.
+nhsdd:r-3
+  a <http://hl7.org/fhir#Bundle.Entry> ;
+  fhir:resource nhsdd:r-3-0 ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0
+  a fhir:ResourceContainer ;
+  fhir:codeSystem nhsdd:CS_CANCER_TREATMENT_INTENT ;
+  composite:index 0 ;
+.
+nhsdd:r-3-0-0-10
+  a fhir:ContactDetail ;
+  fhir:name "NHS Digital Data Model and Dictionary Service" ;
+  fhir:telecom nhsdd:r-3-0-0-10-1 ;
+  fhir:telecom nhsdd:r-3-0-0-10-2 ;
+  composite:index 10 ;
+.
+nhsdd:r-3-0-0-10-1
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-3-0-0-10-1-0 ;
+  fhir:value "information.standards@nhs.net" ;
+  composite:index 1 ;
+.
+nhsdd:r-3-0-0-10-1-0
+  a fhir:ContactPointSystem ;
+  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-3-0-0-10-2
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-3-0-0-10-2-0 ;
+  fhir:value "http://www.datadictionary.nhs.uk/" ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-10-2-0
+  a fhir:ContactPointSystem ;
+  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-3-0-0-14
+  a fhir:CodeSystemHierarchyMeaning ;
+  fhir:value "is-a"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemHierarchyMeaning-list> ;
+  composite:index 14 ;
+.
+nhsdd:r-3-0-0-17
+  a fhir:CodeSystemContentMode ;
+  fhir:value "complete"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemContentMode-list> ;
+  composite:index 17 ;
+.
+nhsdd:r-3-0-0-19-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-19-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-19-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-19-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-2
+  a fhir:Identifier ;
+  fhir:system "http://www.datadictionary.nhs.uk/V3"^^xsd:anyURI ;
+  fhir:value "http://www.datadictionary.nhs.uk/data_dictionary/attributes/c/cancer_treatment_intent_de.asp" ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-20-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-20-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-20-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-20-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-21-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-21-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-21-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-21-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-22-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-22-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-22-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-22-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-23-2
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-24
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:description "The Data Element that the concept relates to" ;
+  fhir:type nhsdd:r-3-0-0-24-2 ;
+  composite:index 24 ;
+.
+nhsdd:r-3-0-0-24-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-25
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:description "The Data Attribute that the concept relates to" ;
+  fhir:type nhsdd:r-3-0-0-25-2 ;
+  composite:index 25 ;
+.
+nhsdd:r-3-0-0-25-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-26
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:description "The date on which the concept was first published and/or updated" ;
+  fhir:type nhsdd:r-3-0-0-26-2 ;
+  composite:index 26 ;
+.
+nhsdd:r-3-0-0-26-2
+  a fhir:PropertyType ;
+  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-27
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:description "The date from which the concept was published as retired" ;
+  fhir:type nhsdd:r-3-0-0-27-2 ;
+  composite:index 27 ;
+.
+nhsdd:r-3-0-0-27-2
+  a fhir:PropertyType ;
+  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-28
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:description "The status of the concept can be one of: draft | active | retired | unknown " ;
+  fhir:type nhsdd:r-3-0-0-28-2 ;
+  composite:index 28 ;
+.
+nhsdd:r-3-0-0-28-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-29
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:description "The web page display order to cater for logical groupings " ;
+  fhir:type nhsdd:r-3-0-0-29-2 ;
+  composite:index 29 ;
+.
+nhsdd:r-3-0-0-29-2
+  a fhir:PropertyType ;
+  fhir:value "integer"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-3-0-0-30-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-30-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:valueDateTime "2013-01-01T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-30-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "retired" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-30-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-30-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-30-8
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "1"^^xsd:int ;
+  composite:index 8 ;
+.
+nhsdd:r-3-0-0-31-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-31-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-31T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-31-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "retired" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-31-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-31-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-31-8
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "2"^^xsd:int ;
+  composite:index 8 ;
+.
+nhsdd:r-3-0-0-32-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-32-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-31T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-32-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "retired" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-32-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-32-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-32-8
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "3"^^xsd:int ;
+  composite:index 8 ;
+.
+nhsdd:r-3-0-0-33-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-33-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:valueDateTime "2013-01-01T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-33-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "retired" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-33-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-33-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-33-8
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "4"^^xsd:int ;
+  composite:index 8 ;
+.
+nhsdd:r-3-0-0-34-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-34-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-31T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-34-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "retired" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-34-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-34-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-34-8
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "6"^^xsd:int ;
+  composite:index 8 ;
+.
+nhsdd:r-3-0-0-35-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-35-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-31T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-35-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "retired" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-35-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-35-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-35-8
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "5"^^xsd:int ;
+  composite:index 8 ;
+.
+nhsdd:r-3-0-0-36-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-36-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-36-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-36-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-36-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "7"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-37-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-37-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-37-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-37-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-37-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "8"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-38-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-11-26T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-38-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-38-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-38-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-38-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "9"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-39-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-11-26T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-39-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-39-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-39-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-39-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "10"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-40-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-11-26T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-40-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-40-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-40-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-40-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "11"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-41-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-41-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-41-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-41-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-41-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "12"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-42-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-42-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-42-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-42-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-42-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "13"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-43-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-43-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-43-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "0"^^xsd:int ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-43-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-44-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-3-0-0-44-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-3-0-0-44-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 5 ;
+.
+nhsdd:r-3-0-0-44-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "CANCER_TREATMENT_INTENT" ;
+  composite:index 6 ;
+.
+nhsdd:r-3-0-0-44-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "14"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-3-0-0-6
+  a fhir:PublicationStatus ;
+  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  composite:index 6 ;
+.
+nhsdd:r-4
+  a <http://hl7.org/fhir#Bundle.Entry> ;
+  fhir:resource nhsdd:r-4-0 ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0
+  a fhir:ResourceContainer ;
+  fhir:codeSystem nhsdd:CS_ONWARD_REFERRAL_REASON ;
+  composite:index 0 ;
+.
+nhsdd:r-4-0-0-10
+  a fhir:ContactDetail ;
+  fhir:name "NHS Digital Data Model and Dictionary Service" ;
+  fhir:telecom nhsdd:r-4-0-0-10-1 ;
+  fhir:telecom nhsdd:r-4-0-0-10-2 ;
+  composite:index 10 ;
+.
+nhsdd:r-4-0-0-10-1
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-4-0-0-10-1-0 ;
+  fhir:value "information.standards@nhs.net" ;
+  composite:index 1 ;
+.
+nhsdd:r-4-0-0-10-1-0
+  a fhir:ContactPointSystem ;
+  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-4-0-0-10-2
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-4-0-0-10-2-0 ;
+  fhir:value "http://www.datadictionary.nhs.uk/" ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-10-2-0
+  a fhir:ContactPointSystem ;
+  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-4-0-0-14
+  a fhir:CodeSystemHierarchyMeaning ;
+  fhir:value "is-a"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemHierarchyMeaning-list> ;
+  composite:index 14 ;
+.
+nhsdd:r-4-0-0-17
+  a fhir:CodeSystemContentMode ;
+  fhir:value "complete"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemContentMode-list> ;
+  composite:index 17 ;
+.
+nhsdd:r-4-0-0-19-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-19-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-19-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-19-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-2
+  a fhir:Identifier ;
+  fhir:system "http://www.datadictionary.nhs.uk/V3"^^xsd:anyURI ;
+  fhir:value "http://www.datadictionary.nhs.uk/data_dictionary/attributes/o/onward_referral_reason_de.asp" ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-20-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-20-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-20-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-20-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-21-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-21-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-21-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-21-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-22-2
+  a fhir:FilterOperator ;
+  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-22-3
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-22-4
+  a fhir:FilterOperator ;
+  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-22-5
+  a fhir:FilterOperator ;
+  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-23-2
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-24
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:description "The Data Element that the concept relates to" ;
+  fhir:type nhsdd:r-4-0-0-24-2 ;
+  composite:index 24 ;
+.
+nhsdd:r-4-0-0-24-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-25
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:description "The Data Attribute that the concept relates to" ;
+  fhir:type nhsdd:r-4-0-0-25-2 ;
+  composite:index 25 ;
+.
+nhsdd:r-4-0-0-25-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-26
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:description "The date on which the concept was first published and/or updated" ;
+  fhir:type nhsdd:r-4-0-0-26-2 ;
+  composite:index 26 ;
+.
+nhsdd:r-4-0-0-26-2
+  a fhir:PropertyType ;
+  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-27
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Retired Date"^^xsd:token ;
+  fhir:description "The date from which the concept was published as retired" ;
+  fhir:type nhsdd:r-4-0-0-27-2 ;
+  composite:index 27 ;
+.
+nhsdd:r-4-0-0-27-2
+  a fhir:PropertyType ;
+  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-28
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:description "The status of the concept can be one of: draft | active | retired | unknown " ;
+  fhir:type nhsdd:r-4-0-0-28-2 ;
+  composite:index 28 ;
+.
+nhsdd:r-4-0-0-28-2
+  a fhir:PropertyType ;
+  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-29
+  a <http://hl7.org/fhir#CodeSystem.Property> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:description "The web page display order to cater for logical groupings " ;
+  fhir:type nhsdd:r-4-0-0-29-2 ;
+  composite:index 29 ;
+.
+nhsdd:r-4-0-0-29-2
+  a fhir:PropertyType ;
+  fhir:value "integer"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  composite:index 2 ;
+.
+nhsdd:r-4-0-0-30-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-30-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-30-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-30-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "1"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-4-0-0-31-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-31-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-31-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-31-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-31-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "2"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-4-0-0-32-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-32-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-32-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-32-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-32-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "3"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-4-0-0-33-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-33-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-33-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-33-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-33-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "4"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-4-0-0-34-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-34-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-34-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-34-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-34-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "5"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-4-0-0-35-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-35-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-35-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-35-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-35-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "6"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-4-0-0-36-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2017-09-25T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-36-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-36-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Attribute"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-36-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-36-7
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "7"^^xsd:int ;
+  composite:index 7 ;
+.
+nhsdd:r-4-0-0-37-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-37-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-37-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "0"^^xsd:int ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-37-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-38-3
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Publish Date"^^xsd:token ;
+  fhir:valueDateTime "2017-03-28T01:00:00+01:00"^^xsd:anySimpleType ;
+  composite:index 3 ;
+.
+nhsdd:r-4-0-0-38-4
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Status"^^xsd:token ;
+  fhir:valueString "active" ;
+  composite:index 4 ;
+.
+nhsdd:r-4-0-0-38-5
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Web Order"^^xsd:token ;
+  fhir:valueInteger "0"^^xsd:int ;
+  composite:index 5 ;
+.
+nhsdd:r-4-0-0-38-6
+  a <http://hl7.org/fhir#CodeSystem.Property1> ;
+  fhir:code "Data Element"^^xsd:token ;
+  fhir:valueString "ONWARD_REFERRAL_REASON" ;
+  composite:index 6 ;
+.
+nhsdd:r-4-0-0-6
+  a fhir:PublicationStatus ;
+  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  composite:index 6 ;
+.
+nhsdd:r-5
+  a <http://hl7.org/fhir#Bundle.Entry> ;
+  fhir:resource nhsdd:r-5-0 ;
+  composite:index 5 ;
+.
+nhsdd:r-5-0
+  a fhir:ResourceContainer ;
+  fhir:valueSet nhsdd:r-5-0-0 ;
+  composite:index 0 ;
+.
+nhsdd:r-5-0-0
+  a fhir:ValueSet ;
+  fhir:compose nhsdd:r-5-0-0-14 ;
+  fhir:contact nhsdd:r-5-0-0-10 ;
+  fhir:copyright "Copyright © NHS Digital" ;
+  fhir:date "2020-03-27T07:21:43+00:00"^^xsd:anySimpleType ;
+  fhir:description "This value set represents the active and retired concepts of the NHS Data Dictionary V3 data element CANCER TREATMENT INTENT, http://www.datadictionary.nhs.uk/valueSet/cancer_treatment_intent as of 27th of March 2020. Further information can be found here: http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/c/cancer_treatment_intent_de.asp" ;
+  fhir:experimental false ;
+  fhir:identifier nhsdd:r-5-0-0-2 ;
+  fhir:immutable true ;
+  fhir:language "en-GB"^^xsd:token ;
+  fhir:name "CANCER_TREATMENT_INTENT" ;
+  fhir:publisher "NHS Digital" ;
+  fhir:status nhsdd:r-5-0-0-6 ;
+  fhir:title "Cancer Treatment Intent" ;
+  fhir:url "http://www.datadictionary.nhs.uk/valueSet/cancer_treatment_intent"^^xsd:anyURI ;
+  fhir:version "4.1.0" ;
+  nhsdd:schemaLocation-ValueSet "http://hl7.org/fhir/fhir-single.xsd" ;
+  nhsdd:xmlns-ValueSet "http://hl7.org/fhir" ;
+  nhsdd:xsi-ValueSet "http://www.w3.org/2001/XMLSchema-instance" ;
+  composite:index 0 ;
+.
+nhsdd:r-5-0-0-10
+  a fhir:ContactDetail ;
+  fhir:name "NHS Digital Data Model and Dictionary Service" ;
+  fhir:telecom nhsdd:r-5-0-0-10-1 ;
+  fhir:telecom nhsdd:r-5-0-0-10-2 ;
+  composite:index 10 ;
+.
+nhsdd:r-5-0-0-10-1
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-5-0-0-10-1-0 ;
+  fhir:value "information.standards@nhs.net" ;
+  composite:index 1 ;
+.
+nhsdd:r-5-0-0-10-1-0
+  a fhir:ContactPointSystem ;
+  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-5-0-0-10-2
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-5-0-0-10-2-0 ;
+  fhir:value "http://www.datadictionary.nhs.uk/" ;
+  composite:index 2 ;
+.
+nhsdd:r-5-0-0-10-2-0
+  a fhir:ContactPointSystem ;
+  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-5-0-0-14
+  a <http://hl7.org/fhir#ValueSet.Compose> ;
+  fhir:include nhsdd:r-5-0-0-14-0 ;
+  composite:index 14 ;
+.
+nhsdd:r-5-0-0-14-0
+  a <http://hl7.org/fhir#ValueSet.Include> ;
+  fhir:filter nhsdd:r-5-0-0-14-0-2 ;
+  fhir:system "https://www.datadictionary.nhs.uk/code_system/union/cancer_treatment_intent"^^xsd:anyURI ;
+  fhir:version "3.2.0" ;
+  composite:index 0 ;
+.
+nhsdd:r-5-0-0-14-0-2
+  a <http://hl7.org/fhir#ValueSet.Filter> ;
+  fhir:op nhsdd:r-5-0-0-14-0-2-1 ;
+  fhir:property "Data Element"^^xsd:token ;
+  fhir:value "CANCER_TREATMENT_INTENT" ;
+  composite:index 2 ;
+.
+nhsdd:r-5-0-0-14-0-2-1
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 1 ;
+.
+nhsdd:r-5-0-0-2
+  a fhir:Identifier ;
+  fhir:system "http://www.datadictionary.nhs.uk/V3"^^xsd:anyURI ;
+  fhir:value "http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/c/cancer_treatment_intent_de.asp" ;
+  composite:index 2 ;
+.
+nhsdd:r-5-0-0-6
+  a fhir:PublicationStatus ;
+  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  composite:index 6 ;
+.
+nhsdd:r-6
+  a <http://hl7.org/fhir#Bundle.Entry> ;
+  fhir:resource nhsdd:r-6-0 ;
+  composite:index 6 ;
+.
+nhsdd:r-6-0
+  a fhir:ResourceContainer ;
+  fhir:valueSet nhsdd:r-6-0-0 ;
+  composite:index 0 ;
+.
+nhsdd:r-6-0-0
+  a fhir:ValueSet ;
+  fhir:compose nhsdd:r-6-0-0-14 ;
+  fhir:contact nhsdd:r-6-0-0-10 ;
+  fhir:copyright "Copyright © NHS Digital" ;
+  fhir:date "2020-03-27T07:21:43+00:00"^^xsd:anySimpleType ;
+  fhir:description "This value set represents the active and retired concepts of the NHS Data Dictionary V3 data element ONWARD REFERRAL REASON, http://www.datadictionary.nhs.uk/valueSet/onward_referral_reason as of 27th of March 2020. Further information can be found here: http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/o/oc/onward_referral_reason_de.asp" ;
+  fhir:experimental false ;
+  fhir:identifier nhsdd:r-6-0-0-2 ;
+  fhir:immutable true ;
+  fhir:language "en-GB"^^xsd:token ;
+  fhir:name "ONWARD_REFERRAL_REASON" ;
+  fhir:publisher "NHS Digital" ;
+  fhir:status nhsdd:r-6-0-0-6 ;
+  fhir:title "Onward Referral Reason" ;
+  fhir:url "http://www.datadictionary.nhs.uk/valueSet/onward_referral_reason"^^xsd:anyURI ;
+  fhir:version "1.1.0" ;
+  nhsdd:schemaLocation-ValueSet "http://hl7.org/fhir/fhir-single.xsd" ;
+  nhsdd:xmlns-ValueSet "http://hl7.org/fhir" ;
+  nhsdd:xsi-ValueSet "http://www.w3.org/2001/XMLSchema-instance" ;
+  composite:index 0 ;
+.
+nhsdd:r-6-0-0-10
+  a fhir:ContactDetail ;
+  fhir:name "NHS Digital Data Model and Dictionary Service" ;
+  fhir:telecom nhsdd:r-6-0-0-10-1 ;
+  fhir:telecom nhsdd:r-6-0-0-10-2 ;
+  composite:index 10 ;
+.
+nhsdd:r-6-0-0-10-1
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-6-0-0-10-1-0 ;
+  fhir:value "information.standards@nhs.net" ;
+  composite:index 1 ;
+.
+nhsdd:r-6-0-0-10-1-0
+  a fhir:ContactPointSystem ;
+  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-6-0-0-10-2
+  a fhir:ContactPoint ;
+  fhir:system nhsdd:r-6-0-0-10-2-0 ;
+  fhir:value "http://www.datadictionary.nhs.uk/" ;
+  composite:index 2 ;
+.
+nhsdd:r-6-0-0-10-2-0
+  a fhir:ContactPointSystem ;
+  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  composite:index 0 ;
+.
+nhsdd:r-6-0-0-14
+  a <http://hl7.org/fhir#ValueSet.Compose> ;
+  fhir:include nhsdd:r-6-0-0-14-0 ;
+  composite:index 14 ;
+.
+nhsdd:r-6-0-0-14-0
+  a <http://hl7.org/fhir#ValueSet.Include> ;
+  fhir:filter nhsdd:r-6-0-0-14-0-2 ;
+  fhir:system "https://www.datadictionary.nhs.uk/code_system/union/onward_referral_reason"^^xsd:anyURI ;
+  fhir:version "1.1.0" ;
+  composite:index 0 ;
+.
+nhsdd:r-6-0-0-14-0-2
+  a <http://hl7.org/fhir#ValueSet.Filter> ;
+  fhir:op nhsdd:r-6-0-0-14-0-2-1 ;
+  fhir:property "Data Element"^^xsd:token ;
+  fhir:value "ONWARD_REFERRAL_REASON" ;
+  composite:index 2 ;
+.
+nhsdd:r-6-0-0-14-0-2-1
+  a fhir:FilterOperator ;
+  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  composite:index 1 ;
+.
+nhsdd:r-6-0-0-2
+  a fhir:Identifier ;
+  fhir:system "http://www.datadictionary.nhs.uk/V3"^^xsd:anyURI ;
+  fhir:value "http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/o/oc/onward_referral_reason_de.asp" ;
+  composite:index 2 ;
+.
+nhsdd:r-6-0-0-6
+  a fhir:PublicationStatus ;
+  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  composite:index 6 ;
+.
+
+<http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD>
+  a owl:Ontology ;
+  owl:imports <http://hl7.topbraid.solutions/fhir/4.0.2/schema/fhir> ;
+  owl:imports <http://topbraid.org/sxml> ;
+.
