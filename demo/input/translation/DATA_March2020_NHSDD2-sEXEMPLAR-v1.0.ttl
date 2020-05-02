@@ -1188,7 +1188,7 @@ nhsdd:March200_NHSDD2
 .
 nhsdd:r-0
   a fhir:BundleType ;
-  fhir:value "batch"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#BundleType-list> ;
+  fhir:value "batch"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-1
@@ -1209,7 +1209,7 @@ nhsdd:r-1-0-0-10-1
 .
 nhsdd:r-1-0-0-10-1-0
   a fhir:ContactPointSystem ;
-  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "email"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-1-0-0-10-2
@@ -1220,37 +1220,37 @@ nhsdd:r-1-0-0-10-2
 .
 nhsdd:r-1-0-0-10-2-0
   a fhir:ContactPointSystem ;
-  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "url"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-1-0-0-14
   a fhir:CodeSystemHierarchyMeaning ;
-  fhir:value "is-a"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemHierarchyMeaning-list> ;
+  fhir:value "is-a"^^xsd:token ;
   composite:index 14 ;
 .
 nhsdd:r-1-0-0-17
   a fhir:CodeSystemContentMode ;
-  fhir:value "complete"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemContentMode-list> ;
+  fhir:value "complete"^^xsd:token ;
   composite:index 17 ;
 .
 nhsdd:r-1-0-0-19-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-19-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-1-0-0-19-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-1-0-0-19-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-1-0-0-2
@@ -1261,67 +1261,67 @@ nhsdd:r-1-0-0-2
 .
 nhsdd:r-1-0-0-20-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-20-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-1-0-0-20-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-1-0-0-20-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-1-0-0-21-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-21-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-1-0-0-21-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-1-0-0-21-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-1-0-0-22-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-22-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-1-0-0-22-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-1-0-0-22-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-1-0-0-23-2
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-24
@@ -1333,7 +1333,7 @@ nhsdd:r-1-0-0-24
 .
 nhsdd:r-1-0-0-24-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-25
@@ -1345,7 +1345,7 @@ nhsdd:r-1-0-0-25
 .
 nhsdd:r-1-0-0-25-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-26
@@ -1357,7 +1357,7 @@ nhsdd:r-1-0-0-26
 .
 nhsdd:r-1-0-0-26-2
   a fhir:PropertyType ;
-  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "dateTime"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-27
@@ -1369,7 +1369,7 @@ nhsdd:r-1-0-0-27
 .
 nhsdd:r-1-0-0-27-2
   a fhir:PropertyType ;
-  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "dateTime"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-28
@@ -1381,7 +1381,7 @@ nhsdd:r-1-0-0-28
 .
 nhsdd:r-1-0-0-28-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-29
@@ -1393,7 +1393,7 @@ nhsdd:r-1-0-0-29
 .
 nhsdd:r-1-0-0-29-2
   a fhir:PropertyType ;
-  fhir:value "integer"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "integer"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-1-0-0-30-3
@@ -2160,7 +2160,7 @@ nhsdd:r-1-0-0-59-6
 .
 nhsdd:r-1-0-0-6
   a fhir:PublicationStatus ;
-  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  fhir:value "active"^^xsd:token ;
   composite:index 6 ;
 .
 nhsdd:r-1-0-0-60-3
@@ -2462,7 +2462,7 @@ nhsdd:r-3-0-0-10-1
 .
 nhsdd:r-3-0-0-10-1-0
   a fhir:ContactPointSystem ;
-  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "email"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-3-0-0-10-2
@@ -2473,37 +2473,37 @@ nhsdd:r-3-0-0-10-2
 .
 nhsdd:r-3-0-0-10-2-0
   a fhir:ContactPointSystem ;
-  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "url"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-3-0-0-14
   a fhir:CodeSystemHierarchyMeaning ;
-  fhir:value "is-a"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemHierarchyMeaning-list> ;
+  fhir:value "is-a"^^xsd:token ;
   composite:index 14 ;
 .
 nhsdd:r-3-0-0-17
   a fhir:CodeSystemContentMode ;
-  fhir:value "complete"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemContentMode-list> ;
+  fhir:value "complete"^^xsd:token ;
   composite:index 17 ;
 .
 nhsdd:r-3-0-0-19-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-19-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-3-0-0-19-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-3-0-0-19-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-3-0-0-2
@@ -2514,67 +2514,67 @@ nhsdd:r-3-0-0-2
 .
 nhsdd:r-3-0-0-20-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-20-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-3-0-0-20-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-3-0-0-20-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-3-0-0-21-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-21-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-3-0-0-21-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-3-0-0-21-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-3-0-0-22-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-22-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-3-0-0-22-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-3-0-0-22-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-3-0-0-23-2
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-24
@@ -2586,7 +2586,7 @@ nhsdd:r-3-0-0-24
 .
 nhsdd:r-3-0-0-24-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-25
@@ -2598,7 +2598,7 @@ nhsdd:r-3-0-0-25
 .
 nhsdd:r-3-0-0-25-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-26
@@ -2610,7 +2610,7 @@ nhsdd:r-3-0-0-26
 .
 nhsdd:r-3-0-0-26-2
   a fhir:PropertyType ;
-  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "dateTime"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-27
@@ -2622,7 +2622,7 @@ nhsdd:r-3-0-0-27
 .
 nhsdd:r-3-0-0-27-2
   a fhir:PropertyType ;
-  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "dateTime"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-28
@@ -2634,7 +2634,7 @@ nhsdd:r-3-0-0-28
 .
 nhsdd:r-3-0-0-28-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-29
@@ -2646,7 +2646,7 @@ nhsdd:r-3-0-0-29
 .
 nhsdd:r-3-0-0-29-2
   a fhir:PropertyType ;
-  fhir:value "integer"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "integer"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-3-0-0-30-3
@@ -3131,7 +3131,7 @@ nhsdd:r-3-0-0-44-7
 .
 nhsdd:r-3-0-0-6
   a fhir:PublicationStatus ;
-  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  fhir:value "active"^^xsd:token ;
   composite:index 6 ;
 .
 nhsdd:r-4
@@ -3159,7 +3159,7 @@ nhsdd:r-4-0-0-10-1
 .
 nhsdd:r-4-0-0-10-1-0
   a fhir:ContactPointSystem ;
-  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "email"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-4-0-0-10-2
@@ -3170,37 +3170,37 @@ nhsdd:r-4-0-0-10-2
 .
 nhsdd:r-4-0-0-10-2-0
   a fhir:ContactPointSystem ;
-  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "url"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-4-0-0-14
   a fhir:CodeSystemHierarchyMeaning ;
-  fhir:value "is-a"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemHierarchyMeaning-list> ;
+  fhir:value "is-a"^^xsd:token ;
   composite:index 14 ;
 .
 nhsdd:r-4-0-0-17
   a fhir:CodeSystemContentMode ;
-  fhir:value "complete"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystemContentMode-list> ;
+  fhir:value "complete"^^xsd:token ;
   composite:index 17 ;
 .
 nhsdd:r-4-0-0-19-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-19-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-4-0-0-19-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-4-0-0-19-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-4-0-0-2
@@ -3211,67 +3211,67 @@ nhsdd:r-4-0-0-2
 .
 nhsdd:r-4-0-0-20-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-20-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-4-0-0-20-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-4-0-0-20-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-4-0-0-21-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-21-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-4-0-0-21-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-4-0-0-21-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-4-0-0-22-2
   a fhir:FilterOperator ;
-  fhir:value "in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "in"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-22-3
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 3 ;
 .
 nhsdd:r-4-0-0-22-4
   a fhir:FilterOperator ;
-  fhir:value "exists"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "exists"^^xsd:token ;
   composite:index 4 ;
 .
 nhsdd:r-4-0-0-22-5
   a fhir:FilterOperator ;
-  fhir:value "not-in"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "not-in"^^xsd:token ;
   composite:index 5 ;
 .
 nhsdd:r-4-0-0-23-2
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-24
@@ -3283,7 +3283,7 @@ nhsdd:r-4-0-0-24
 .
 nhsdd:r-4-0-0-24-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-25
@@ -3295,7 +3295,7 @@ nhsdd:r-4-0-0-25
 .
 nhsdd:r-4-0-0-25-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-26
@@ -3307,7 +3307,7 @@ nhsdd:r-4-0-0-26
 .
 nhsdd:r-4-0-0-26-2
   a fhir:PropertyType ;
-  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "dateTime"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-27
@@ -3319,7 +3319,7 @@ nhsdd:r-4-0-0-27
 .
 nhsdd:r-4-0-0-27-2
   a fhir:PropertyType ;
-  fhir:value "dateTime"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "dateTime"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-28
@@ -3331,7 +3331,7 @@ nhsdd:r-4-0-0-28
 .
 nhsdd:r-4-0-0-28-2
   a fhir:PropertyType ;
-  fhir:value "string"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "string"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-29
@@ -3343,7 +3343,7 @@ nhsdd:r-4-0-0-29
 .
 nhsdd:r-4-0-0-29-2
   a fhir:PropertyType ;
-  fhir:value "integer"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PropertyType-list> ;
+  fhir:value "integer"^^xsd:token ;
   composite:index 2 ;
 .
 nhsdd:r-4-0-0-30-4
@@ -3600,7 +3600,7 @@ nhsdd:r-4-0-0-38-6
 .
 nhsdd:r-4-0-0-6
   a fhir:PublicationStatus ;
-  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  fhir:value "active"^^xsd:token ;
   composite:index 6 ;
 .
 nhsdd:r-5
@@ -3650,7 +3650,7 @@ nhsdd:r-5-0-0-10-1
 .
 nhsdd:r-5-0-0-10-1-0
   a fhir:ContactPointSystem ;
-  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "email"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-5-0-0-10-2
@@ -3661,7 +3661,7 @@ nhsdd:r-5-0-0-10-2
 .
 nhsdd:r-5-0-0-10-2-0
   a fhir:ContactPointSystem ;
-  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "url"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-5-0-0-14
@@ -3685,7 +3685,7 @@ nhsdd:r-5-0-0-14-0-2
 .
 nhsdd:r-5-0-0-14-0-2-1
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 1 ;
 .
 nhsdd:r-5-0-0-2
@@ -3696,7 +3696,7 @@ nhsdd:r-5-0-0-2
 .
 nhsdd:r-5-0-0-6
   a fhir:PublicationStatus ;
-  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  fhir:value "active"^^xsd:token ;
   composite:index 6 ;
 .
 nhsdd:r-6
@@ -3746,7 +3746,7 @@ nhsdd:r-6-0-0-10-1
 .
 nhsdd:r-6-0-0-10-1-0
   a fhir:ContactPointSystem ;
-  fhir:value "email"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "email"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-6-0-0-10-2
@@ -3757,7 +3757,7 @@ nhsdd:r-6-0-0-10-2
 .
 nhsdd:r-6-0-0-10-2-0
   a fhir:ContactPointSystem ;
-  fhir:value "url"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ContactPointSystem-list> ;
+  fhir:value "url"^^xsd:token ;
   composite:index 0 ;
 .
 nhsdd:r-6-0-0-14
@@ -3781,7 +3781,7 @@ nhsdd:r-6-0-0-14-0-2
 .
 nhsdd:r-6-0-0-14-0-2-1
   a fhir:FilterOperator ;
-  fhir:value "="^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#FilterOperator-list> ;
+  fhir:value "="^^xsd:token ;
   composite:index 1 ;
 .
 nhsdd:r-6-0-0-2
@@ -3792,10 +3792,9 @@ nhsdd:r-6-0-0-2
 .
 nhsdd:r-6-0-0-6
   a fhir:PublicationStatus ;
-  fhir:value "active"^^<http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#PublicationStatus-list> ;
+  fhir:value "active"^^xsd:token ;
   composite:index 6 ;
 .
-
 <http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD>
   a owl:Ontology ;
   owl:imports <http://hl7.topbraid.solutions/fhir/4.0.2/schema/fhir> ;
