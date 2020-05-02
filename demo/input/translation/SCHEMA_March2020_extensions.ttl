@@ -1,0 +1,42 @@
+nhsdd:schemaLocation-Bundle
+  a owl:DatatypeProperty ;
+  sxml:attribute "xsi:schemaLocation" ;
+  rdfs:domain <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#Bundle> ;
+  rdfs:label "xsi:schemaLocation" ;
+.
+nhsdd:schemaLocation-CodeSystem
+  a owl:DatatypeProperty ;
+  sxml:attribute "xsi:schemaLocation" ;
+  rdfs:domain <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystem> ;
+  rdfs:label "xsi:schemaLocation" ;
+.
+nhsdd:schemaLocation-ValueSet
+  a owl:DatatypeProperty ;
+  sxml:attribute "xsi:schemaLocation" ;
+  rdfs:domain <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ValueSet> ;
+  rdfs:label "xsi:schemaLocation" ;
+.
+nhsdd:xmlns-Bundle
+  a owl:DatatypeProperty ;
+  sxml:attribute "xmlns" ;
+  rdfs:domain <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#Bundle> ;
+  rdfs:label "xmlns" ;
+.
+nhsdd:xmlns-ValueSet
+  a owl:DatatypeProperty ;
+  sxml:attribute "xmlns" ;
+  rdfs:domain <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ValueSet> ;
+  rdfs:label "xmlns" ;
+.
+nhsdd:xsi-CodeSystem
+  a owl:DatatypeProperty ;
+  sxml:attribute "xmlns:xsi" ;
+  rdfs:domain <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#CodeSystem> ;
+  rdfs:label "xmlns:xsi" ;
+.
+nhsdd:xsi-ValueSet
+  a owl:DatatypeProperty ;
+  sxml:attribute "xmlns:xsi" ;
+  rdfs:domain <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#ValueSet> ;
+  rdfs:label "xmlns:xsi" ;
+.

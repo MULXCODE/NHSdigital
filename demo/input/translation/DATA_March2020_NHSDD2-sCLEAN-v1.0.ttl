@@ -1,6 +1,6 @@
 # baseURI: http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD
 # imports: http://hl7.org/fhir
-# imports: http://hl7.topbraid.solutions/fhir/4.0.1/schema/fhir
+# imports: http://hl7.topbraid.solutions/fhir/4.0.2/schema/fhir
 # imports: http://topbraid.org/sxml
 
 @prefix : <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD#> .
@@ -16,7 +16,7 @@
 <http://nhsdigital.tobraid.solutions/demo/data/March2020_NHSDD>
   a owl:Ontology ;
   owl:imports <http://hl7.org/fhir> ;
-  owl:imports <http://hl7.topbraid.solutions/fhir/4.0.1/schema/fhir> ;
+  owl:imports <http://hl7.topbraid.solutions/fhir/4.0.2/schema/fhir> ;
   owl:imports <http://topbraid.org/sxml> ;
 .
 :Document
