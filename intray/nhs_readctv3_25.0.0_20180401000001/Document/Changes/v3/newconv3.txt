@@ -1,0 +1,146 @@
+READ_CODE|TERM_60|TERM_ID|DESC_TYPE|RELEASE
+XagyS|Short synacthen test cortisol level at 30 minutes|YazRf|P|2018-04-01
+XagyQ|Short synacthen test cortisol level at 0 minutes|YazRe|P|2018-04-01
+Xagor|Human papillomavirus self-sample test positive|YazP7|P|2018-04-01
+Xagoa|Human papillomavirus self-sample test negative|YazP4|P|2018-04-01
+Xagvz|Insufficient self-sample for human papillomavirus testing|YazQg|P|2018-04-01
+XagpS|EQ-5D-Y (EuroQol Five Dimension (Youth)) health state score|YazPN|P|2018-04-01
+XagpS|EuroQol Five Dimension (Youth) health state score|YazPM|S|2018-04-01
+XagpR|EQ-5D-Y VAS (visual analogue scale) score|YazPL|P|2018-04-01
+XagpR|EuroQol Five Dimension (Youth) visual analogue scale score|YazPK|S|2018-04-01
+XagpQ|EQ-5D-Y feeling worried, sad or unhappy score|YazPJ|P|2018-04-01
+XagpQ|EQ-5D-Y feeling worried, sad or unhappy score|YazPI|S|2018-04-01
+XagpM|EQ-5D-Y having pain or discomfort score|YazPH|P|2018-04-01
+XagpM|EQ-5D-Y having pain or discomfort score|YazPG|S|2018-04-01
+XagpH|EQ-5D-Y doing usual activities score|YazPF|P|2018-04-01
+XagpH|EuroQol Five Dimension (Youth) doing usual activities score|YazPE|S|2018-04-01
+XagpE|EQ-5D-Y looking after myself score|YazPD|P|2018-04-01
+XagpE|EuroQol Five Dimension (Youth) looking after myself score|YazPC|S|2018-04-01
+XagpC|EQ-5D-Y (EuroQol Five Dimension (Youth)) mobility score|YazPB|P|2018-04-01
+XagpC|EuroQol Five Dimension (Youth) mobility score|YazPA|S|2018-04-01
+Xagce|FeverPAIN (Fever, PAIN) Clinical Score|YazLC|P|2018-04-01
+Xagnc|Unable to initiate gait|YazOU|P|2018-04-01
+Xagnb|Able to initiate gait|YazOT|P|2018-04-01
+Xagoc|Freezing of gait|YazP5|P|2018-04-01
+XagnW|Able to balance when standing with feet in tandem stance|YazOO|P|2018-04-01
+XagnV|Able to balance standing with feet in semi-tandem stance|YazON|P|2018-04-01
+XagnU|Able to balance when standing with feet together|YazOM|P|2018-04-01
+XagnT|Able to balance when standing with feet apart|YazOL|P|2018-04-01
+Xagna|Unable to balance when standing with feet in tandem stance|YazOS|P|2018-04-01
+XagnZ|Unable to balance standing with feet in semi-tandem stance|YazOR|P|2018-04-01
+XagnY|Unable to balance when standing with feet together|YazOQ|P|2018-04-01
+XagnX|Unable to balance when standing with feet apart|YazOP|P|2018-04-01
+XagaN|Trauma Screening Questionnaire score|YazKG|P|2018-04-01
+XagaN|TSQ (Trauma Screening Questionnaire) score|YazKH|S|2018-04-01
+Xagww|Use of khat|YazR1|P|2018-04-01
+Xagww|Khat user|YazR2|S|2018-04-01
+Xagzb|Not in regular contact with own children|YazS4|P|2018-04-01
+Xagza|In regular contact with own children|YazS3|P|2018-04-01
+Xagbe|Liver transient elastography fibrosis score|YazKs|P|2018-04-01
+Xagbe|Liver ultrasound elastography fibrosis score|YazKt|S|2018-04-01
+Xagk3|Skin ulcer associated with diabetes mellitus|YazN8|P|2018-04-01
+Xagk3|Diabetic skin ulcer|YazN9|S|2018-04-01
+Xage0|Abbey Pain Scale score|YazMX|P|2018-04-01
+Xah0B|Under consideration for birth to 25 EHC plan|YazSJ|P|2018-04-01
+Xagzc|Number of dependent children|YazS5|P|2018-04-01
+XagzZ|Living temporarily with relatives|YazS2|P|2018-04-01
+XagzY|Living temporarily with friends|YazS1|P|2018-04-01
+XagzE|Loss of accommodation prevented|YazRy|P|2018-04-01
+Xagmi|No recourse to public funds|YazNo|P|2018-04-01
+Xagvf|At risk of delirium|YazQM|P|2018-04-01
+XagoH|At risk of hepatitis B infection|YazOk|P|2018-04-01
+Xaghb|Predominantly cortical dementia|Y00dK|P|2018-04-01
+XagwE|Harmful use of khat|YazR3|P|2018-04-01
+Xagdx|Andersen Tawil syndrome|YazMU|P|2018-04-01
+Xagdx|Long QT syndrome 7|YazMV|S|2018-04-01
+Xagdx|Andersen cardiodysrhythmic periodic paralysis|YazMW|S|2018-04-01
+XagaM|Systemic mastocytosis|YazKE|P|2018-04-01
+XagaM|SMCD - systemic mast cell disease|YazKF|S|2018-04-01
+Xaglc|Uncomplicated urinary tract infection|YazNT|P|2018-04-01
+Xaglc|Uncomplicated UTI (urinary tract infection)|YazNU|S|2018-04-01
+XagnJ|Referral to Voluntary Returns Service|YazOA|P|2018-04-01
+XagnI|Referral to rough sleeper outreach service|YazO8|P|2018-04-01
+XagnQ|Referral to legal service|YazOH|P|2018-04-01
+XagnG|Referral to homeless advocacy service|YazO6|P|2018-04-01
+Xagms|Referral to end of life care service|YazNs|P|2018-04-01
+Xah0U|Birth to 25 education, health and care planning meeting|YazSc|P|2018-04-01
+Xah0C|Birth to 25 education, health and care review meeting|YazSK|P|2018-04-01
+Xaglb|NHS Diabetes Prevention Programme invitation|YazNS|P|2018-04-01
+XagbK|Medication review invitation|YazKY|P|2018-04-01
+Xagx3|Declined to disclose housing status|YazR6|P|2018-04-01
+XagnS|Eligible for adult social care package|YazOK|P|2018-04-01
+XagtH|Confidential patient data held not to b seen by other doctor|YazQ9|P|2018-04-01
+XagtG|Confidential patient data held - not to be seen by paramedic|YazQ7|P|2018-04-01
+XagtF|Confidential patient data held - not to be seen by staff|YazQ5|P|2018-04-01
+XagtE|Confidential patient data held - not to be reported|YazQ3|P|2018-04-01
+Xagrg|Confidential patient data held - not to be seen by patient|YazPl|P|2018-04-01
+Xagrc|Participant in group session|YazPk|P|2018-04-01
+Xagou|Human papillomavirus self-sample screening offered|YazP9|P|2018-04-01
+Xaaeo|Risks to others|YazR5|P|2018-04-01
+Xagt6|Voice of the Child narrative|YazQ2|P|2018-04-01
+Xah0A|Birth to 25 education, health and care plan|YazSI|P|2018-04-01
+Xagvk|Prevention of delirium care plan|YazQN|P|2018-04-01
+Xagxr|Verbal screening for tuberculosis|YazRL|P|2018-04-01
+Xagon|Isotretinoin cumulative dose|YazP6|P|2018-04-01
+Xagmm|Family contact facilitation|YazNq|P|2018-04-01
+Xagxv|Recommendation to measure and record own blood pressure|YazRM|P|2018-04-01
+Xagxq|Education about hepatitis|YazRK|P|2018-04-01
+Xagml|Subsistence support given|YazNp|P|2018-04-01
+Xagvl|Assessment for risk of delirium|YazQP|P|2018-04-01
+Xagx4|Contraception care management|YazR7|P|2018-04-01
+Xah0D|Birth to 25 education, health and care|YazSL|P|2018-04-01
+Xah0F|Birth to 25 EHC in mainstream education setting|YazSN|P|2018-04-01
+Xah0E|Birth to 25 EHC in special education setting|YazSM|P|2018-04-01
+Xagzf|Provision of community outreach care for homeless|YazSd|P|2018-04-01
+XagrT|Signposting to Diabetes UK|YazPi|P|2018-04-01
+XagrU|Signposting to Diabetes UK Learning Zone|YazPj|P|2018-04-01
+XagnP|Assistance with obtaining accommodation|YazOG|P|2018-04-01
+XagzW|Assistance with GP practice registration|YazRz|P|2018-04-01
+XagTa|Framingham CVD 10 year risk score calculator|YazPO|P|2018-04-01
+XagnR|H/O asymptomatic human immunodeficiency virus infection|YazOJ|P|2018-04-01
+Xagdj|Suspected typhus|YazML|P|2018-04-01
+Xagcw|Suspected diphtheria|YazLW|P|2018-04-01
+Xagcx|Suspected cholera|YazLX|P|2018-04-01
+Xagcy|Suspected acute infectious hepatitis|YazLY|P|2018-04-01
+Xagcz|Suspected anthrax|YazLZ|P|2018-04-01
+Xagd0|Suspected botulism|YazLa|P|2018-04-01
+Xagd1|Suspected brucellosis|YazLb|P|2018-04-01
+Xagd2|Suspected acute poliomyelitis|YazLc|P|2018-04-01
+Xagd3|Suspected infectious haemorrhagic diarrhoea|YazLd|P|2018-04-01
+Xagd3|Suspected infectious bloody diarrhoea|YazLe|S|2018-04-01
+Xagd4|Suspected tuberculosis|YazLf|P|2018-04-01
+Xagd5|Suspected Legionnaires' disease|YazLg|P|2018-04-01
+Xagd5|Suspected Legionella pneumonia|YazLh|S|2018-04-01
+Xagd6|Suspected malaria|YazLi|P|2018-04-01
+Xagd7|Suspected measles|YazLj|P|2018-04-01
+Xagd8|Suspected mumps|YazLk|P|2018-04-01
+Xagd9|Suspected plague|YazLl|P|2018-04-01
+XagdA|Suspected rabies|YazLm|P|2018-04-01
+XagdB|Suspected rubella|YazLn|P|2018-04-01
+XagdB|Suspected German measles|YazLo|S|2018-04-01
+XagdC|Suspected scarlet fever|YazLp|P|2018-04-01
+XagdD|Suspected smallpox|YazLq|P|2018-04-01
+XagdE|Suspected pertussis|YazLr|P|2018-04-01
+XagdE|Suspected whooping cough|YazLs|S|2018-04-01
+XagdF|Suspected yellow fever|YazLt|P|2018-04-01
+XagdG|Suspected viral haemorrhagic fever|YazLu|P|2018-04-01
+XagdG|Suspected VHF (viral haemorrhagic fever)|YazLv|S|2018-04-01
+XagdH|Suspected severe acute respiratory syndrome|YazLw|P|2018-04-01
+XagdH|Suspected SARS (severe acute respiratory syndrome)|YazLx|S|2018-04-01
+Xagda|Suspected acute encephalitis|YazMA|P|2018-04-01
+Xagdb|Suspected acute meningitis|YazMB|P|2018-04-01
+Xagdc|Suspected typhoid fever|YazMC|P|2018-04-01
+Xagdd|Suspected paratyphoid fever|YazMD|P|2018-04-01
+Xagde|Suspected haemolytic uraemic syndrome|YazME|P|2018-04-01
+Xagde|Suspected HUS (haemolytic uraemic syndrome)|YazMF|S|2018-04-01
+Xagdf|Suspt invasive Group A beta-haemolytic streptococcal disease|YazMG|P|2018-04-01
+Xagdg|Suspected leprosy|YazMH|P|2018-04-01
+Xagdh|Suspected meningococcal septicaemia|YazMI|P|2018-04-01
+Xagdh|Suspected meningococcaemia|YazMJ|S|2018-04-01
+Xagdi|Suspected tetanus|YazMK|P|2018-04-01
+XagY6|Discussed with psychiatrist|YazJu|P|2018-04-01
+XagzX|Declined assistance with GP practice registration|YazS0|P|2018-04-01
+XagnO|Referral to homeless advocacy service declined|YazOF|P|2018-04-01
+XagnL|Referral to substance misuse service declined|YazOD|P|2018-04-01
+XagnN|Referral to mental health service declined|YazOE|P|2018-04-01
+Xagot|Human papillomavirus self-sample screening declined|YazP8|P|2018-04-01
