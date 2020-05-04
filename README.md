@@ -15,4 +15,5 @@ The Terminology Solution shall be able to handle, as a minimum, the following Co
  * Organisational Data – including historical versions - downloaded, it is in XML, need help estimating size.
  * All Data Dictionary reference data and national codes – including historical versions (https://www.datadictionary.nhs.uk/ ) - asked a question, need help in estimating.
  * UCUM (Unified Codes for Units of Measure) - I downloaded a table from https://www.cdisc.org/kb/article/ucum-and-cdisc-codelists, estimate under 200K
+    * QUDT carries UCUM codes
  * Human Phenotype Ontology - 330K (edited) 
