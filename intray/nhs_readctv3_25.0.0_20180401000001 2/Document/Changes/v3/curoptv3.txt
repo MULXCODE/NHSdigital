@@ -1,0 +1,2 @@
+READ_CODE|TERM_60|TERM_ID|DESC_TYPE|RELEASE
+Xafey|Number of prescriptions for reliever inhaler per year|Yaz1Y|P|2018-04-01
