@@ -1,0 +1,36 @@
+# baseURI: http://nhsdd.topbraid.solutions/1.0/schema/shacl/fhir
+# imports: http://datashapes.org/dash
+# prefix: fhir
+
+# baseURI: http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir
+# imports: http://datashapes.org/dash
+# imports: http://topbraid.org/sxml
+# imports: http://www.linkedmodel.org/schema/dtype
+# imports: http://www.w3.org/1999/xhtml
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix fhir: <http://hl7.org/fhir#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sxml: <http://topbraid.org/sxml#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix xhtml: <http://www.w3.org/1999/xhtml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://nhsdd.topbraid.solutions/1.0/schema/shacl/fhir>
+  a owl:Ontology ;
+  a sh:NodeShape ;
+  <http://datashapes.org/owl2shacl#createPropertyShapeURIsWithPrefixes> true ;
+  rdfs:comment "https://www.hl7.org/fhir/versions.html" ;
+  rdfs:label "SCHEMA SHACL FHIR in EDG v4.0.3" ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://topbraid.org/sxml> ;
+  owl:imports <http://www.linkedmodel.org/schema/dtype> ;
+  owl:imports <http://www.w3.org/1999/xhtml> ;
+  owl:versionInfo "Created with TopBraid Composer from the XML Schema(s) http://hl7.org/fhir" ;
+.
