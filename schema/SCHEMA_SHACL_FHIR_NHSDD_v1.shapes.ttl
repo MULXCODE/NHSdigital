@@ -1,9 +1,7 @@
-# baseURI: http://nhsdd.topbraid.solutions/1.0/schema/shacl/fhir
+# baseURI: http://nhsdd.topbraid.solutions/1.0/schema/fhir
 # imports: http://datashapes.org/dash
-# prefix: fhir
-
-# baseURI: http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir
-# imports: http://datashapes.org/dash
+# imports: http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir
+# imports: http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD
 # imports: http://topbraid.org/sxml
 # imports: http://www.linkedmodel.org/schema/dtype
 # imports: http://www.w3.org/1999/xhtml
@@ -22,13 +20,15 @@
 @prefix xhtml: <http://www.w3.org/1999/xhtml#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://nhsdd.topbraid.solutions/1.0/schema/shacl/fhir>
+<http://nhsdd.topbraid.solutions/1.0/schema/fhir>
   a owl:Ontology ;
   a sh:NodeShape ;
   <http://datashapes.org/owl2shacl#createPropertyShapeURIsWithPrefixes> true ;
   rdfs:comment "https://www.hl7.org/fhir/versions.html" ;
   rdfs:label "SCHEMA SHACL FHIR in EDG v4.0.3" ;
   owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir> ;
+  owl:imports <http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD> ;
   owl:imports <http://topbraid.org/sxml> ;
   owl:imports <http://www.linkedmodel.org/schema/dtype> ;
   owl:imports <http://www.w3.org/1999/xhtml> ;
