@@ -1,0 +1,120 @@
+# baseURI: null
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms: <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference: <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual: <http://topbraid.org/visual#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[
+  a visual:Graph ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.org/ex#AS_1000> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "132"^^xsd:int ;
+      visual:x "1041"^^xsd:int ;
+      visual:y "535"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.org/ex#A_116676008> ;
+      visual:height "71"^^xsd:int ;
+      visual:width "192"^^xsd:int ;
+      visual:x "1303"^^xsd:int ;
+      visual:y "611"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.org/ex#A_363698007> ;
+      visual:height "71"^^xsd:int ;
+      visual:width "192"^^xsd:int ;
+      visual:x "1294"^^xsd:int ;
+      visual:y "500"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.org/ex#E_Fracture_of_tibia> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "198"^^xsd:int ;
+      visual:x "21"^^xsd:int ;
+      visual:y "495"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.org/ex#FC_428881005> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "154"^^xsd:int ;
+      visual:x "609"^^xsd:int ;
+      visual:y "337"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.org/ex#FC_46866001> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "194"^^xsd:int ;
+      visual:x "625"^^xsd:int ;
+      visual:y "428"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.org/ex#RFMNT_1000> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "156"^^xsd:int ;
+      visual:x "661"^^xsd:int ;
+      visual:y "542"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://example.org/ex#SE_46866001> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "145"^^xsd:int ;
+      visual:x "321"^^xsd:int ;
+      visual:y "555"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://snomed.topbraid.solutions/schema/cg#AttributeSet> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "178"^^xsd:int ;
+      visual:x "1219"^^xsd:int ;
+      visual:y "332"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://snomed.topbraid.solutions/schema/cg#Expression> ;
+      visual:height "53"^^xsd:int ;
+      visual:width "227"^^xsd:int ;
+      visual:x "202"^^xsd:int ;
+      visual:y "237"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://snomed.topbraid.solutions/schema/cg#FocusConcept> ;
+      visual:height "35"^^xsd:int ;
+      visual:width "190"^^xsd:int ;
+      visual:x "771"^^xsd:int ;
+      visual:y "236"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://snomed.topbraid.solutions/schema/cg#Refinement> ;
+      visual:height "53"^^xsd:int ;
+      visual:width "229"^^xsd:int ;
+      visual:x "946"^^xsd:int ;
+      visual:y "333"^^xsd:int ;
+    ] ;
+  visual:child [
+      a visual:Box ;
+      visual:depicts <http://snomed.topbraid.solutions/schema/cg#SubExpression> ;
+      visual:height "53"^^xsd:int ;
+      visual:width "236"^^xsd:int ;
+      visual:x "477"^^xsd:int ;
+      visual:y "236"^^xsd:int ;
+    ] ;
+  visual:depicts <http://example.org/ex#AS_1000> ;
+  rdfs:label "ex:Fracture_of_tibia" ;
+].

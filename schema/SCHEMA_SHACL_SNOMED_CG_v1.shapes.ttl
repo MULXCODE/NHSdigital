@@ -1,0 +1,322 @@
+# baseURI: http://snomed.topbraid.solutions/1.0/schema/cg
+# imports: http://datashapes.org/dash
+# imports: http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir
+# imports: http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD
+# imports: http://topbraid.org/sxml
+# imports: http://www.linkedmodel.org/schema/dtype
+# imports: http://www.w3.org/1999/xhtml
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix ex: <http://example.org/ex#> .
+@prefix fhir: <http://hl7.org/fhir#> .
+@prefix nhsdd: <http://nhsdigital.tobraid.solutions/demo/nhsdd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix snomed.cg: <http://snomed.topbraid.solutions/schema/cg#> .
+@prefix swa: <http://topbraid.org/swa#> .
+@prefix sxml: <http://topbraid.org/sxml#> .
+@prefix tosh: <http://topbraid.org/tosh#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/voag/> .
+@prefix xhtml: <http://www.w3.org/1999/xhtml#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance#> .
+
+ex:AS_1000
+  a snomed.cg:AttributeSet ;
+  snomed.cg:attribute ex:A_116676008 ;
+  snomed.cg:attribute ex:A_363698007 ;
+  rdfs:label "AS 1000" ;
+.
+ex:A_116676008
+  a snomed.cg:Attribute ;
+  snomed.cg:name "116676008" ;
+  snomed.cg:value "72704001" ;
+  rdfs:label "116676008" ;
+.
+ex:A_363698007
+  a snomed.cg:Attribute ;
+  snomed.cg:name "363698007" ;
+  snomed.cg:value "12611008" ;
+  rdfs:label "116676008" ;
+.
+ex:C_31978002
+  a snomed.cg:Concept ;
+  snomed.cg:conceptId "31978002" ;
+  rdfs:label "Fracture of tibia" ;
+.
+ex:E_Fracture_of_tibia
+  a snomed.cg:Expression ;
+  snomed.cg:subExpression ex:SE_46866001 ;
+  rdfs:label "EXP Fracture of tibia" ;
+.
+ex:FC_428881005
+  a snomed.cg:FocusConcept ;
+  rdfs:label "Injury of tibia" ;
+.
+ex:FC_46866001
+  a snomed.cg:FocusConcept ;
+  rdfs:label "Fracture of lower limb" ;
+.
+ex:RFMNT_1000
+  a snomed.cg:Refinement ;
+  snomed.cg:attributeGroupOrSet ex:AS_1000 ;
+  rdfs:label "RFMNT 1000" ;
+.
+ex:SE_46866001
+  a snomed.cg:SubExpression ;
+  snomed.cg:focusConcept ex:FC_428881005 ;
+  snomed.cg:focusConcept ex:FC_46866001 ;
+  snomed.cg:refinement ex:RFMNT_1000 ;
+.
+<http://snomed.topbraid.solutions/1.0/schema/cg>
+  a owl:Ontology ;
+  a sh:NodeShape ;
+  <http://datashapes.org/owl2shacl#createPropertyShapeURIsWithPrefixes> true ;
+  rdfs:comment "https://www.hl7.org/fhir/versions.html" ;
+  rdfs:label "SCHEMA SHACL FHIR in EDG v4.0.3" ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir> ;
+  owl:imports <http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD> ;
+  owl:imports <http://topbraid.org/sxml> ;
+  owl:imports <http://www.linkedmodel.org/schema/dtype> ;
+  owl:imports <http://www.w3.org/1999/xhtml> ;
+  owl:versionInfo "Created with TopBraid Composer from the XML Schema(s) http://hl7.org/fhir" ;
+.
+snomed.cg:Attribute
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Attribute" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+  sh:property snomed.cg:Attribute-name ;
+  sh:property snomed.cg:Attribute-value ;
+.
+snomed.cg:Attribute-name
+  a sh:PropertyShape ;
+  sh:path snomed.cg:name ;
+  sh:datatye xsd:string ;
+  sh:max 1 ;
+.
+snomed.cg:Attribute-value
+  a sh:PropertyShape ;
+  sh:path snomed.cg:value ;
+  sh:datatype xsd:string ;
+  sh:max 1 ;
+.
+snomed.cg:AttributeGroup
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Attribute Group" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+  sh:property snomed.cg:AttributeGroup-attributeSet ;
+.
+snomed.cg:AttributeGroup-attributeSet
+  a sh:PropertyShape ;
+  sh:path snomed.cg:attributeSet ;
+  sh:class snomed.cg:AttributeSet ;
+.
+snomed.cg:AttributeSet
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Attribute Set" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+  sh:property snomed.cg:AttributeSet-attribute ;
+.
+snomed.cg:AttributeSet-attribute
+  a sh:PropertyShape ;
+  sh:path snomed.cg:attribute ;
+  sh:class snomed.cg:Attribute ;
+.
+snomed.cg:AttributeValue
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Attribute value" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+.
+snomed.cg:Concept
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Concept" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+  sh:property snomed.cg:Concept-conceptId ;
+.
+snomed.cg:Concept-conceptId
+  a sh:PropertyShape ;
+  sh:path snomed.cg:conceptId ;
+  sh:datatype xsd:string ;
+  sh:description "The ConceptId must be a valid SNOMED CT identifier for a concept. The initial digit may not be zero. The smallest number of digits is six, and the maximum is 18." ;
+.
+snomed.cg:Construct
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "SNOMED CG Construct" ;
+  rdfs:subClassOf rdfs:Resource ;
+.
+snomed.cg:DefinitionStatus
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Definition status" ;
+  rdfs:subClassOf snomed.cg:ReificationClass ;
+  sh:property snomed.cg:DefinitionStatus-definitionStatus ;
+.
+snomed.cg:DefinitionStatus-definitionStatus
+  a sh:PropertyShape ;
+  sh:path snomed.cg:definitionStatus ;
+  sh:datatype xsd:string ;
+  sh:description "An expression often consists only of a subExpression. However, in some cases a definition status is needed to state whether the clinical meaning being represented is equivalent to or a subtype of the subExpression. If no definition status is included, the clinical meaning being represented is assumed to be ‘equivalent to’ the subExpression." ;
+  sh:description "The definition status states whether the clinical meaning being expressed is equivalent to or a subtype of the given expression representation." ;
+  sh:in (
+      "==="
+      "equivalentTo"
+      "<<<"
+      "subtypeOf"
+    ) ;
+  sh:maxCount 1 ;
+.
+snomed.cg:Expression
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "An expression often consists only of a subExpression. However, in some cases a definition status is needed to state whether the clinical meaning being represented is equivalent to or a subtype of the subExpression. If no definition status is included, the clinical meaning being represented is assumed to be ‘equivalent to’ the subExpression." ;
+  rdfs:label "Expression" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+  sh:property snomed.cg:Expression-subExpression ;
+.
+snomed.cg:Expression-subExpression
+  a sh:PropertyShape ;
+  sh:path snomed.cg:subExpression ;
+  dash:reifiableBy snomed.cg:DefinitionStatus ;
+  sh:class snomed.cg:SubExpression ;
+.
+snomed.cg:FocusConcept
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Focus concept" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+  sh:property snomed.cg:FocusConcept-conceptReference ;
+.
+snomed.cg:FocusConcept-conceptReference
+  a sh:PropertyShape ;
+  sh:path snomed.cg:conceptReference ;
+  sh:class snomed.cg:Concept ;
+  sh:description "A conceptReference is represented by a ConceptId optionally followed by a term enclosed by a pair of \"|\" characters. Whitespace before or after the ConceptId is ignored as is any whitespace between the initial \"|\" characters and the first non-whitespace character in the term or between the last non-whitespace character and before second \"|\" character." ;
+.
+snomed.cg:Refinement
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:comment "A refinement contains all the grouped and ungrouped attributes that refine the meaning of the containing expression." ;
+  rdfs:label "Expression" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+  sh:property snomed.cg:Refinement-attributeGroupOrAttributeSet ;
+.
+snomed.cg:Refinement-attributeGroupOrAttributeSet
+  a sh:PropertyShape ;
+  sh:path snomed.cg:attributeGroupOrSet ;
+  sh:class snomed.cg:AttributeGroup ;
+  sh:name "attribute group / attribute set" ;
+.
+snomed.cg:ReificationClass
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "SNOMED CG Reification Class" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+.
+snomed.cg:SubExpression
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Sub expression" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+  sh:description "A subexpression consists of one or more focus concepts, optionally followed by a refinement. The meaning of the expression is a subtype of all the focus concepts constrained by the refinement. Note that where there is a requirement for multiple separately qualified concepts to be present these are expressed in attribute groups within a refinement of a general concept such as \"situation with explicit context \"." ;
+  sh:property snomed.cg:SubExpression-focusConcept ;
+  sh:property snomed.cg:SubExpression-refinement ;
+.
+snomed.cg:SubExpression-focusConcept
+  a sh:PropertyShape ;
+  sh:path snomed.cg:focusConcept ;
+  sh:class snomed.cg:FocusConcept ;
+.
+snomed.cg:SubExpression-refinement
+  a sh:PropertyShape ;
+  sh:path snomed.cg:refinement ;
+  sh:or (
+      [
+        sh:class snomed.cg:AttributeSet ;
+      ]
+      [
+        sh:class snomed.cg:AttributeGroup ;
+      ]
+    ) ;
+.
+snomed.cg:Term
+  a rdfs:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Term" ;
+  rdfs:subClassOf snomed.cg:Construct ;
+.
+snomed.cg:attribute
+  a rdf:Property ;
+  rdfs:label "attribute" ;
+  sh:description "An attribute group contains a collection of attributes that operate together as part of the refinement of the containing expression" ;
+.
+snomed.cg:attributeGroupOrSet
+  a rdf:Property ;
+  rdfs:label "attribute group / attribute set" ;
+  sh:description "An attribute group contains a collection of attributes that operate together as part of the refinement of the containing expression" ;
+.
+snomed.cg:attributeSet
+  a rdf:Property ;
+  rdfs:label "attribute set" ;
+  sh:description "An attribute group contains a collection of attributes that operate together as part of the refinement of the containing expression" ;
+.
+snomed.cg:conceptId
+  a rdf:Property ;
+  rdfs:label "concept ID" ;
+.
+snomed.cg:conceptReference
+  a rdf:Property ;
+  rdfs:label "concept reference" ;
+.
+snomed.cg:definitionStatus
+  a rdf:Property ;
+  rdfs:label "definition status" ;
+.
+snomed.cg:equivalentTo
+  a rdf:Property ;
+  rdfs:label "equivalent to" ;
+  rdfs:subPropertyOf snomed.cg:definitionStatus ;
+.
+snomed.cg:focusConcept
+  a rdf:Property ;
+  rdfs:comment "A focusConcept consists of one or more concept references separated by ‘plus’ signs" ;
+  rdfs:label "focus concept" ;
+.
+snomed.cg:operator
+  a rdf:Property ;
+  rdfs:range xsd:string ;
+.
+snomed.cg:refinement
+  a rdf:Property ;
+  rdfs:label "refinement" ;
+.
+snomed.cg:subExpression
+  a rdf:Property ;
+  rdfs:label "subexpression" ;
+.
+snomed.cg:subTypeOf
+  a rdf:Property ;
+  rdfs:label "subtype of" ;
+  rdfs:subPropertyOf snomed.cg:definitionStatus ;
+  sh:description "A definition status of subtypeOf (i.e. “<<<”) indicates that the clinical meaning being represented is a semantic subtype (or subclass) of the given expression." ;
+.
+snomed.cg:value
+  a rdf:Property ;
+  rdfs:label "value" ;
+.
