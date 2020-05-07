@@ -1,10 +1,12 @@
 # baseURI: http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD
-# imports: http://hl7.topbraid.solutions/fhir/4.0.2/schema/fhir
+# imports: http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir
+# imports: http://nhsdd.topbraid.solutions/1.0/schema/fhir
 # imports: http://topbraid.org/sxml
 
 @prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
 @prefix fhir: <http://hl7.org/fhir#> .
 @prefix nhsdd: <http://nhsdigital.tobraid.solutions/demo/nhsdd#> .
+@prefix nhsdd.fhir: <http://nhsdd.topbraid.solutions/schema/fhir#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -995,6 +997,7 @@ nhsdd:CSP1_Publish_Date
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:CS_CANCER_TREATMENT_INTENT
   a fhir:CodeSystem ;
@@ -1120,6 +1123,12 @@ nhsdd:CS_CARE_PROFESSIONAL_TYPE
   fhir:url "https://www.datadictionary.nhs.uk/code_system/union/care_professional_type"^^xsd:anyURI ;
   fhir:version "1.1.0" ;
   fhir:versionNeeded false ;
+  nhsdd.fhir:dataAttribute "Data Attribute"^^xsd:token ;
+  nhsdd.fhir:dataElement "Data Element"^^xsd:token ;
+  nhsdd.fhir:publishDate "Publish Date"^^xsd:token ;
+  nhsdd.fhir:retiredDate "Retired Date"^^xsd:token ;
+  nhsdd.fhir:status "Status"^^xsd:token ;
+  nhsdd.fhir:webOrder "Web Order"^^xsd:token ;
   nhsdd:schemaLocation-CodeSystem "http://hl7.org/fhir/fhir-single.xsd" ;
   nhsdd:xsi-CodeSystem "http://www.w3.org/2001/XMLSchema-instance" ;
   composite:index 0 ;
@@ -1165,6 +1174,12 @@ nhsdd:CS_ONWARD_REFERRAL_REASON
   fhir:url "https://www.datadictionary.nhs.uk/code_system/union/onward_referral_reason"^^xsd:anyURI ;
   fhir:version "1.1.0" ;
   fhir:versionNeeded false ;
+  nhsdd.fhir:dataAttribute "Data Attribute"^^xsd:token ;
+  nhsdd.fhir:dataElement "Data Element"^^xsd:token ;
+  nhsdd.fhir:publishDate "Publish Date"^^xsd:token ;
+  nhsdd.fhir:retiredDate "Retired Date"^^xsd:token ;
+  nhsdd.fhir:status "Status"^^xsd:token ;
+  nhsdd.fhir:webOrder "Web Order"^^xsd:token ;
   nhsdd:schemaLocation-CodeSystem "http://hl7.org/fhir/fhir-single.xsd" ;
   nhsdd:xsi-CodeSystem "http://www.w3.org/2001/XMLSchema-instance" ;
   composite:index 0 ;
@@ -1330,6 +1345,7 @@ nhsdd:r-1-0-0-24
   fhir:description "The Data Element that the concept relates to" ;
   fhir:type nhsdd:r-1-0-0-24-2 ;
   composite:index 24 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-24-2
   a fhir:PropertyType ;
@@ -1342,6 +1358,7 @@ nhsdd:r-1-0-0-25
   fhir:description "The Data Attribute that the concept relates to" ;
   fhir:type nhsdd:r-1-0-0-25-2 ;
   composite:index 25 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-25-2
   a fhir:PropertyType ;
@@ -1354,6 +1371,7 @@ nhsdd:r-1-0-0-26
   fhir:description "The date on which the concept was first published and/or updated" ;
   fhir:type nhsdd:r-1-0-0-26-2 ;
   composite:index 26 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-26-2
   a fhir:PropertyType ;
@@ -1366,6 +1384,7 @@ nhsdd:r-1-0-0-27
   fhir:description "The date from which the concept was published as retired" ;
   fhir:type nhsdd:r-1-0-0-27-2 ;
   composite:index 27 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-1-0-0-27-2
   a fhir:PropertyType ;
@@ -1378,6 +1397,7 @@ nhsdd:r-1-0-0-28
   fhir:description "The status of the concept can be one of: draft | active | retired | unknown " ;
   fhir:type nhsdd:r-1-0-0-28-2 ;
   composite:index 28 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-28-2
   a fhir:PropertyType ;
@@ -1390,6 +1410,7 @@ nhsdd:r-1-0-0-29
   fhir:description "The web page display order to cater for logical groupings " ;
   fhir:type nhsdd:r-1-0-0-29-2 ;
   composite:index 29 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-29-2
   a fhir:PropertyType ;
@@ -1401,762 +1422,889 @@ nhsdd:r-1-0-0-30-3
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-30-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-30-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-30-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-30-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "41"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-31-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-31-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-31-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-31-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "1"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-32-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-32-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-32-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-32-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "2"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-33-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-33-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-33-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-33-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "3"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-34-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-34-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-34-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-34-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "4"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-35-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-35-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-35-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-35-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "5"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-36-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-36-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-36-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-36-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-36-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "6"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-37-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-37-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-37-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-37-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "7"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-38-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-38-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-38-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-38-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "8"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-39-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-39-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-39-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-39-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "9"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-40-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-40-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-40-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-40-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "10"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-41-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-41-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-41-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-41-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "11"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-42-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-42-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-42-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-42-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "12"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-43-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-43-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-43-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-43-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "13"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-44-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-44-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-44-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-44-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "14"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-45-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-45-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-45-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-45-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-45-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "15"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-46-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-46-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-46-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-46-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-46-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "16"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-47-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-47-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-47-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-47-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "17"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-48-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-48-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-48-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-48-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-48-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "18"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-49-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-49-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-49-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-49-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "19"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-50-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-50-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-50-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-50-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "20"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-51-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-51-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-51-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-51-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-51-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "21"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-52-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-52-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-52-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-52-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-52-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "22"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-53-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-53-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-53-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-53-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "23"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-54-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-54-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-54-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-54-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "24"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-55-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-55-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-55-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-55-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "25"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-56-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-56-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-56-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-56-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "26"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-57-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-57-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-57-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-57-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "27"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-58-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-58-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-58-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-58-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "28"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-59-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-59-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-59-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-59-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "29"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-6
   a fhir:PublicationStatus ;
@@ -2168,270 +2316,315 @@ nhsdd:r-1-0-0-60-3
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-60-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-60-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-60-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "30"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-61-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-61-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-61-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-61-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE_CODE_(OUTCOME_COMMUNICATION_CANCER_FASTER_DIAGNOSIS_PATHWAY)" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-1-0-0-61-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "31"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-62-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-62-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-62-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-62-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "32"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-63-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-63-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-63-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-63-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "33"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-64-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-64-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-64-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-64-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "34"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-65-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-65-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-65-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-65-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "35"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-66-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-05-22T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-66-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-66-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-66-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "36"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-67-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-67-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-67-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-67-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "37"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-68-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-68-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-68-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-68-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "38"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-69-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-69-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-69-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-69-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "39"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-1-0-0-70-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-1-0-0-70-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-1-0-0-70-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CARE_PROFESSIONAL_TYPE" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-1-0-0-70-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "40"^^xsd:int ;
   composite:index 6 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-2
   a <http://hl7.org/fhir#Bundle.Entry> ;
@@ -2583,6 +2776,7 @@ nhsdd:r-3-0-0-24
   fhir:description "The Data Element that the concept relates to" ;
   fhir:type nhsdd:r-3-0-0-24-2 ;
   composite:index 24 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-24-2
   a fhir:PropertyType ;
@@ -2595,6 +2789,7 @@ nhsdd:r-3-0-0-25
   fhir:description "The Data Attribute that the concept relates to" ;
   fhir:type nhsdd:r-3-0-0-25-2 ;
   composite:index 25 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-25-2
   a fhir:PropertyType ;
@@ -2607,6 +2802,7 @@ nhsdd:r-3-0-0-26
   fhir:description "The date on which the concept was first published and/or updated" ;
   fhir:type nhsdd:r-3-0-0-26-2 ;
   composite:index 26 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-26-2
   a fhir:PropertyType ;
@@ -2619,6 +2815,7 @@ nhsdd:r-3-0-0-27
   fhir:description "The date from which the concept was published as retired" ;
   fhir:type nhsdd:r-3-0-0-27-2 ;
   composite:index 27 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-3-0-0-27-2
   a fhir:PropertyType ;
@@ -2631,6 +2828,7 @@ nhsdd:r-3-0-0-28
   fhir:description "The status of the concept can be one of: draft | active | retired | unknown " ;
   fhir:type nhsdd:r-3-0-0-28-2 ;
   composite:index 28 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-28-2
   a fhir:PropertyType ;
@@ -2643,6 +2841,7 @@ nhsdd:r-3-0-0-29
   fhir:description "The web page display order to cater for logical groupings " ;
   fhir:type nhsdd:r-3-0-0-29-2 ;
   composite:index 29 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-29-2
   a fhir:PropertyType ;
@@ -2654,480 +2853,560 @@ nhsdd:r-3-0-0-30-3
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-30-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Retired Date"^^xsd:token ;
   fhir:valueDateTime "2013-01-01T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 4 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-3-0-0-30-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "retired" ;
   composite:index 5 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-30-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-30-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 7 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-30-8
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "1"^^xsd:int ;
   composite:index 8 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-31-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-31-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Retired Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-31T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 4 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-3-0-0-31-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "retired" ;
   composite:index 5 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-31-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-31-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 7 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-31-8
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "2"^^xsd:int ;
   composite:index 8 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-32-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-32-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Retired Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-31T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 4 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-3-0-0-32-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "retired" ;
   composite:index 5 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-32-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-32-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 7 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-32-8
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "3"^^xsd:int ;
   composite:index 8 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-33-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2012-12-20T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-33-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Retired Date"^^xsd:token ;
   fhir:valueDateTime "2013-01-01T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 4 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-3-0-0-33-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "retired" ;
   composite:index 5 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-33-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-33-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 7 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-33-8
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "4"^^xsd:int ;
   composite:index 8 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-34-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-34-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Retired Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-31T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 4 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-3-0-0-34-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "retired" ;
   composite:index 5 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-34-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-34-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 7 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-34-8
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "6"^^xsd:int ;
   composite:index 8 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-35-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-35-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Retired Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-31T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 4 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-3-0-0-35-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "retired" ;
   composite:index 5 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-35-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-35-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 7 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-35-8
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "5"^^xsd:int ;
   composite:index 8 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-36-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-36-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-36-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-36-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-36-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "7"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-37-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-37-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-37-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-37-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-37-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "8"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-38-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-11-26T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-38-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-38-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-38-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-38-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "9"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-39-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-11-26T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-39-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-39-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-39-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-39-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "10"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-40-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-11-26T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-40-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-40-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-40-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-40-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "11"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-41-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-41-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-41-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-41-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-41-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "12"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-42-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-42-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-42-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-42-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-42-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "13"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-43-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2018-03-14T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-43-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-43-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "0"^^xsd:int ;
   composite:index 5 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-43-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-44-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-3-0-0-44-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-3-0-0-44-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-3-0-0-44-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "CANCER_TREATMENT_INTENT" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-3-0-0-44-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "14"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-3-0-0-6
   a fhir:PublicationStatus ;
@@ -3280,6 +3559,7 @@ nhsdd:r-4-0-0-24
   fhir:description "The Data Element that the concept relates to" ;
   fhir:type nhsdd:r-4-0-0-24-2 ;
   composite:index 24 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-24-2
   a fhir:PropertyType ;
@@ -3292,6 +3572,7 @@ nhsdd:r-4-0-0-25
   fhir:description "The Data Attribute that the concept relates to" ;
   fhir:type nhsdd:r-4-0-0-25-2 ;
   composite:index 25 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-4-0-0-25-2
   a fhir:PropertyType ;
@@ -3304,6 +3585,7 @@ nhsdd:r-4-0-0-26
   fhir:description "The date on which the concept was first published and/or updated" ;
   fhir:type nhsdd:r-4-0-0-26-2 ;
   composite:index 26 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-26-2
   a fhir:PropertyType ;
@@ -3316,6 +3598,7 @@ nhsdd:r-4-0-0-27
   fhir:description "The date from which the concept was published as retired" ;
   fhir:type nhsdd:r-4-0-0-27-2 ;
   composite:index 27 ;
+  rdfs:label "Retired Date"@en ;
 .
 nhsdd:r-4-0-0-27-2
   a fhir:PropertyType ;
@@ -3328,6 +3611,7 @@ nhsdd:r-4-0-0-28
   fhir:description "The status of the concept can be one of: draft | active | retired | unknown " ;
   fhir:type nhsdd:r-4-0-0-28-2 ;
   composite:index 28 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-28-2
   a fhir:PropertyType ;
@@ -3340,6 +3624,7 @@ nhsdd:r-4-0-0-29
   fhir:description "The web page display order to cater for logical groupings " ;
   fhir:type nhsdd:r-4-0-0-29-2 ;
   composite:index 29 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-29-2
   a fhir:PropertyType ;
@@ -3351,252 +3636,294 @@ nhsdd:r-4-0-0-30-4
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-30-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-4-0-0-30-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-30-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "1"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-31-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-31-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-31-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-4-0-0-31-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-31-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "2"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-32-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-32-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-32-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-4-0-0-32-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-32-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "3"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-33-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-33-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-33-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-4-0-0-33-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-33-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "4"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-34-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-34-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-34-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-4-0-0-34-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-34-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "5"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-35-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2020-03-27T00:00:00+00:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-35-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-35-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-4-0-0-35-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-35-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "6"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-36-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2017-09-25T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-36-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-36-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Attribute"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 5 ;
+  rdfs:label "Data Attribute"@en ;
 .
 nhsdd:r-4-0-0-36-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-36-7
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "7"^^xsd:int ;
   composite:index 7 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-37-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2015-08-23T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-37-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-37-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "0"^^xsd:int ;
   composite:index 5 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-37-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-38-3
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Publish Date"^^xsd:token ;
   fhir:valueDateTime "2017-03-28T01:00:00+01:00"^^xsd:anySimpleType ;
   composite:index 3 ;
+  rdfs:label "Publish Date"@en ;
 .
 nhsdd:r-4-0-0-38-4
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Status"^^xsd:token ;
   fhir:valueString "active" ;
   composite:index 4 ;
+  rdfs:label "Status"@en ;
 .
 nhsdd:r-4-0-0-38-5
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Web Order"^^xsd:token ;
   fhir:valueInteger "0"^^xsd:int ;
   composite:index 5 ;
+  rdfs:label "Web Order"@en ;
 .
 nhsdd:r-4-0-0-38-6
   a <http://hl7.org/fhir#CodeSystem.Property1> ;
   fhir:code "Data Element"^^xsd:token ;
   fhir:valueString "ONWARD_REFERRAL_REASON" ;
   composite:index 6 ;
+  rdfs:label "Data Element"@en ;
 .
 nhsdd:r-4-0-0-6
   a fhir:PublicationStatus ;
@@ -3797,6 +4124,7 @@ nhsdd:r-6-0-0-6
 .
 <http://nhsdigital.tobraid.solutions/exemplar/data/March2020_NHSDD>
   a owl:Ontology ;
-  owl:imports <http://hl7.topbraid.solutions/fhir/4.0.2/schema/fhir> ;
+  owl:imports <http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir> ;
+  owl:imports <http://nhsdd.topbraid.solutions/1.0/schema/fhir> ;
   owl:imports <http://topbraid.org/sxml> ;
 .
