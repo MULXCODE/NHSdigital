@@ -1,0 +1,121 @@
+# baseURI: http://nhsdd.topbraid.solutions/1.1/schema/fhir
+# imports: http://datashapes.org/dash
+# imports: http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir
+# imports: http://topbraid.org/sxml
+# imports: http://www.linkedmodel.org/schema/dtype
+# imports: http://www.w3.org/1999/xhtml
+
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dtype: <http://www.linkedmodel.org/schema/dtype#> .
+@prefix fhir: <http://hl7.org/fhir#> .
+@prefix nhsdd.fhir: <http://nhsdd.topbraid.solutions/schema/fhir#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sxml: <http://topbraid.org/sxml#> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix xhtml: <http://www.w3.org/1999/xhtml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir#CodeSystem.Concept>
+  rdfs:subClassOf fhir:EDGMainClass ;
+.
+<http://nhsdd.topbraid.solutions/1.1/schema/fhir>
+  a owl:Ontology ;
+  a sh:NodeShape ;
+  <http://datashapes.org/owl2shacl#createPropertyShapeURIsWithPrefixes> true ;
+  rdfs:comment "https://www.hl7.org/fhir/versions.html" ;
+  rdfs:label "SCHEMA NHS DD v1.1" ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://edg.hl7.topbraid.solutions/fhir/4.0.3/schema/fhir> ;
+  owl:imports <http://topbraid.org/sxml> ;
+  owl:imports <http://www.linkedmodel.org/schema/dtype> ;
+  owl:imports <http://www.w3.org/1999/xhtml> ;
+  owl:versionInfo "Created with TopBraid Composer from the XML Schema(s) http://hl7.org/fhir" ;
+.
+nhsdd.fhir:DataDictionaryConcept
+  a owl:Class ;
+  a sh:NodeShape ;
+  rdfs:label "Data Dicitonary Concept" ;
+  rdfs:subClassOf <http://hl7.org/fhir#CodeSystem.Concept> ;
+  sh:property nhsdd.fhir:DataDictionaryConcept-dataAttribute ;
+  sh:property nhsdd.fhir:DataDictionaryConcept-dataElement ;
+  sh:property nhsdd.fhir:DataDictionaryConcept-publishDate ;
+  sh:property nhsdd.fhir:DataDictionaryConcept-retiredDate ;
+  sh:property nhsdd.fhir:DataDictionaryConcept-status ;
+  sh:property nhsdd.fhir:DataDictionaryConcept-webOrder ;
+.
+nhsdd.fhir:DataDictionaryConcept-dataAttribute
+  a sh:PropertyShape ;
+  sh:path nhsdd.fhir:dataAttribute ;
+  dash:reifiableBy <http://hl7.org/fhir#CodeSystem.Property> ;
+  sh:datatype xsd:string ;
+  sh:description "The code of the Data Attribute that the concept relates to" ;
+  sh:name "data attribute" ;
+.
+nhsdd.fhir:DataDictionaryConcept-dataElement
+  a sh:PropertyShape ;
+  sh:path nhsdd.fhir:dataElement ;
+  sh:datatype xsd:string ;
+  sh:description "The code for the Data Element that the concept relates to" ;
+  sh:name "data element" ;
+.
+nhsdd.fhir:DataDictionaryConcept-publishDate
+  a sh:PropertyShape ;
+  sh:path nhsdd.fhir:publishDate ;
+  dash:reifiableBy <http://hl7.org/fhir#CodeSystem.Property> ;
+  sh:datatype xsd:date ;
+  sh:description "The date on which the concept was first published and/or updated" ;
+  sh:name "publish date" ;
+.
+nhsdd.fhir:DataDictionaryConcept-retiredDate
+  a sh:PropertyShape ;
+  sh:path nhsdd.fhir:retiredDate ;
+  dash:reifiableBy <http://hl7.org/fhir#CodeSystem.Property> ;
+  sh:datatype xsd:date ;
+  sh:description "The date from which the concept was published as retired" ;
+  sh:name "retired date" ;
+.
+nhsdd.fhir:DataDictionaryConcept-status
+  a sh:PropertyShape ;
+  sh:path nhsdd.fhir:status ;
+  sh:datatype xsd:date ;
+  sh:description "The status of the concept can be one of: draft | active | retired | unknown " ;
+  sh:name "status" ;
+.
+nhsdd.fhir:DataDictionaryConcept-webOrder
+  a sh:PropertyShape ;
+  sh:path nhsdd.fhir:webOrder ;
+  dash:reifiableBy <http://hl7.org/fhir#CodeSystem.Property> ;
+  sh:datatype xsd:string ;
+  sh:description "The web page display order to cater for logical groupings " ;
+  sh:name "web order" ;
+.
+nhsdd.fhir:dataAttribute
+  a rdf:Property ;
+  rdfs:label "data attribute" ;
+.
+nhsdd.fhir:dataElement
+  a rdf:Property ;
+  rdfs:label "data element" ;
+.
+nhsdd.fhir:publishDate
+  a rdf:Property ;
+  rdfs:label "publish date" ;
+.
+nhsdd.fhir:retiredDate
+  a rdf:Property ;
+  rdfs:label "retired date" ;
+.
+nhsdd.fhir:status
+  a rdf:Property ;
+  rdfs:label "status" ;
+.
+nhsdd.fhir:webOrder
+  a rdf:Property ;
+  rdfs:label "web order" ;
+.
